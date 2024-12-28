@@ -649,9 +649,10 @@ footer::after {
     padding: 4px 0;
 }
 /* Footer Post */
-.list-unstyled.post,.list-unstyled.footer_contact {
+.list-unstyled.post, .list-unstyled.footer_contact {
     margin-top: -14px;
 }
+
 .post .date {
     border: 2px solid #fff;
     border-radius: 100%;
@@ -665,40 +666,109 @@ footer::after {
     text-align: center;
     width: 50px;
 }
-.footer_item li a:hover .date,.footer_item li a:focus .date{ border:2px solid #aaa; }
-.footer_item li a:hover,.footer_item li a:focus{
+
+.footer_item li a:hover .date, .footer_item li a:focus .date {
+    border: 2px solid #aaa;
+}
+
+.footer_item li a:hover, .footer_item li a:focus {
     color: #aaa;
 }
+
 .post .date small {
     font-size: 12px;
 }
 
-.list-unstyled.post > li,.list-unstyled.footer_contact > li {
+.list-unstyled.post > li, .list-unstyled.footer_contact > li {
     padding: 14px 0;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 /* Footer Contact */
 .footer_contact .fa {
     margin-right: 25px;
     text-align: center;
     width: 15px;
     float: left;
-    font-size:18px;
+    font-size: 18px;
 }
+
 .list-unstyled.footer_contact p {
     overflow: hidden;
 }
+/* Footer Post */
+.list-unstyled.post, .list-unstyled.footer_contact {
+    margin-top: -14px;
+}
+
+.post .date {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: block;
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 12px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+.footer_item li a:hover .date, .footer_item li a:focus .date {
+    border: 2px solid #aaa;
+}
+
+.footer_item li a:hover, .footer_item li a:focus {
+    color: #aaa;
+}
+
+.post .date small {
+    font-size: 12px;
+}
+
+.list-unstyled.post > li, .list-unstyled.footer_contact > li {
+    padding: 14px 0;
+    overflow: hidden;
+}
+
+/* Footer Contact */
+.footer_contact .fa {
+    margin-right: 25px;
+    text-align: center;
+    width: 15px;
+    float: left;
+    font-size: 18px;
+}
+
+.list-unstyled.footer_contact p {
+    overflow: hidden;
+}
+
+/* Footer Bottom */
 .footer_bottom {
-    background: #1a1c27 none repeat scroll 0 0;
-    padding: 28px 0 18px;
-    margin-top:55px;
+    background-color: transparent;  /* Remove the background color */
+    padding: 0;  /* Remove padding */
+    margin-top: 55px;
+    text-align: center;  /* Center the text */
+    color: #fff;  /* Set text color to match your site */
 }
+
 .footer_bottom a {
-    color: #ffcb0f;
+    color: #ffcb0f;  /* Link color */
 }
-.footer_bottom a:hover,.footer_bottom a:focus {
-    color: #d7a300;
+
+.footer_bottom a:hover, .footer_bottom a:focus {
+    color: #d7a300;  /* Hover link color */
 }
+
+/* Remove the border or any other box styling */
+.footer_bottom p {
+    margin: 0;  /* Remove extra margin if any */
+    padding: 0;  /* Remove padding */
+    color: #fff;  /* Use the same text color */
+}
+
 /* ScrollUP */
 #scrollUp {
     background: url(../images/top.png)no-repeat scroll 0 0;
