@@ -164,7 +164,7 @@
         <!-- About -->
         <section id="about">
             <div class="container about_bg">
-                <div class="row">
+                <div class="row" style="display: flex; align-items: center;">
                     <div class="col-lg-7 col-md-6">
                         <div class="about_content">
                             <h2>Welcome to Sarathi Construction</h2>
@@ -175,14 +175,15 @@
                             <a href="#services" class="btn know_btn">Know More</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-lg-offset-1">
+                    <div class="col-lg-5 col-md-6" style="display: flex; justify-content: center; align-items: center;">
                         <div class="about_banner">
-                            <img src="images/man.png" alt="" />
+                            <img src="images/man.png" alt="" style="max-width: 100%; height: auto;" />
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- About end -->
+        </section>
+        <!-- About end -->
 
         <!-- Why us -->
         <section id="why_us">
@@ -278,50 +279,50 @@
 
                 <div id="filters">
                     <button class="button is-checked" data-filter="*">Show All</button>
-                    <button class="button" data-filter=".buildings">Buildings</button>
-                    <button class="button" data-filter=".interior">Interior Design</button>
-                    <button class="button" data-filter=".isolation">Isolation</button>
-                    <button class="button" data-filter=".plumbing">Plumbing</button>
+                    <button class="button" data-filter=".commercial">Commercial</button>
+                    <button class="button" data-filter=".residential">Residential</button>
+                    <button class="button" data-filter=".municipality">Municipality</button>
+                  <!--  <button class="button" data-filter=".plumbing">Plumbing</button> -->
                 </div>
                 <!-- Portfolio grid -->		
                 <div class="grid">
                     <div class="grid-sizer"></div>
-                    <div class="grid-item grid-item--width2 grid-item--height2 buildings plumbing interior">
+                    <div class="grid-item grid-item--width2 grid-item--height2 commercial">
                         <img alt="" src="images/highligh_img.jpg" >
                         <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/highligh_img.jpg" data-fancybox-group="gallery" title="Muktinath Bikas Bank - Central Office, Kathmandu"><span class="fa fa-search"></span></a>
+                            <a class="fancybox" href="images/highligh_img.jpg" data-fancybox-group="gallery" title="Muktinath Bikas Bank (Central Office) - Lazimpat, Kathmandu"><span class="fa fa-search"></span></a>
                             <!-- <a href="#"><span class="fa fa-link"></span></a> -->
                         </div>  
                     </div>
 
-                    <div class="grid-item buildings interior isolation">
+                    <div class="grid-item commercial ">
                         <img alt="" src="images/portfolio1.jpg" >
                         <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
+                            <a class="fancybox" href="images/portfolio1.jpg" data-fancybox-group="gallery" title="Omoda Jeecoo Nepal - Uttardhoka, Kathmandu "><span class="fa fa-search"></span></a>
                             <!-- <a href="#"><span class="fa fa-link"></span></a> -->
                         </div>   
                     </div>
 
-                    <div class="grid-item interior plumbing isolation">
+                    <div class="grid-item municipality">
                         <img alt="" src="images/portfolio2.jpg" >
                         <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
+                            <a class="fancybox" href="images/portfolio2.jpg" data-fancybox-group="gallery" title="Chandragiri Municipality - Balambu, Chandragiri"><span class="fa fa-search"></span></a>
                             <!-- <a href="#"><span class="fa fa-link"></span></a> -->
                         </div>  
                     </div>
 
-                    <div class="grid-item isolation buildings">
+                    <div class="grid-item residential">
                         <img alt="" src="images/portfolio3.jpg" >
                         <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
+                            <a class="fancybox" href="images/portfolio3.jpg" data-fancybox-group="gallery" title="Residential Property - Sanepa, Kathmandu"><span class="fa fa-search"></span></a>
                             <!-- <a href="#"><span class="fa fa-link"></span></a> -->
                         </div>  
                     </div>
 
-                    <div class="grid-item plumbing isolation">
+                    <div class="grid-item residential">
                         <img alt="" src="images/portfolio4.jpg" >
                         <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
+                            <a class="fancybox" href="images/portfolio4.jpg" data-fancybox-group="gallery" title="Residential Property - Dhapasi, Tokha"><span class="fa fa-search"></span></a>
                             <!-- <a href="#"><span class="fa fa-link"></span></a> -->
                         </div>  
                     </div>
@@ -329,7 +330,7 @@
             </div>
         </section><!-- Portfolio end -->
 
-        <!-- Testimonial -->
+        <!-- Testimonial 
         <section id="testimonial">
             <div class="container text-center testimonial_area">
                 <h2>Customer Reviews</h2>
@@ -365,7 +366,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- Testimonial end -->
+        </section>
+        Testimonial end -->
 
         <!-- Contact form 
 <section id="contact_form">
@@ -491,5 +493,3 @@
         <script src="js/main.js"></script>
     </body>	
 </html>	
-
-
