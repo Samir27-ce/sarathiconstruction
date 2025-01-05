@@ -145,14 +145,14 @@ a:hover,a:focus{ text-decoration: none}
 .list-inline.info > li {
     padding: 0 20px 0 0;
 }
-.list-inline.info a,.list-inline.social_icon a {
+.list-inline.info a, .list-inline.social_icon a {
     color: #222;
     font-family: 'futura_ltbook', sans-serif;
 }
-.list-inline.info a:hover,.list-inline.social_icon a:hover {
+.list-inline.info a:hover, .list-inline.social_icon a:hover {
     color: #555;
 }
-.list-inline.info a .fa,.list-inline.social_icon  a .fa {
+.list-inline.info a .fa, .list-inline.social_icon a .fa {
     font-size: 20px;
     vertical-align: text-top;
 }
@@ -160,20 +160,32 @@ a:hover,a:focus{ text-decoration: none}
     float: right;
     margin: 0;
 }
+
 /* Main Nav */
 nav.navbar.bootsnav {
-    background: #222533 none repeat scroll 0 0;
+    background: #232941 none repeat scroll 0 0;
     border: 0 none;
+    min-height: 60px; /* Ensure the navbar height accommodates the logo */
+    padding: 0;
 }
 nav.navbar.bootsnav ul.nav > li > a {
     color: #fff;
 }
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus {
+nav.navbar.bootsnav ul.nav > li > a:hover, nav.navbar.bootsnav ul.nav > li > a:focus {
     color: #aaa;
 }
 .navbar-brand {
+    padding: 0 px; /* Adjust for spacing */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
     height: auto;
-    padding: 20px 15px;
+}
+.navbar-brand img.logo {
+    margin-bottom: 0 px;
+    width: 150px;
+    display: block;
+    max-height: auto; /* Adjust to fit navbar height */
+   
 }
 #navbar-menu {
     margin: 6px 0;
@@ -188,9 +200,10 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     color: #ffcb0f;
     font-size: 20px;
 }
-.attr-nav > ul > li > a:hover,.attr-nav > ul > li > a:focus {
+.attr-nav > ul > li > a:hover, .attr-nav > ul > li > a:focus {
     color: #d7a300;
 }
+
 /* Carousel */
 .home .carousel {
     position: relative;
