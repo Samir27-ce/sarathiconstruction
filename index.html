@@ -3,42 +3,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Sarathi Construction Pvt. Ltd. provides construction, project management, planning and architectural services for residential, commercial and institutional projects in Kathmandu, Nepal.">
+    <meta name="description" content="Sarathi Construction Pvt. Ltd. - A Kathmandu-based construction company established in 2018, delivering residential, commercial and infrastructure projects across Nepal.">
 
-    <meta name="keywords"
-        content="Sarathi Construction, construction company Kathmandu, construction Nepal, building contractor Kathmandu, commercial construction Nepal, residential construction Kathmandu">
+    <meta name="keywords" content="Sarathi Construction, construction company Nepal, construction Kathmandu, building contractor Nepal, residential construction, commercial construction">
 
     <meta name="author" content="Sarathi Construction Pvt. Ltd.">
 
-    <meta name="theme-color" content="#171717">
+    <title>Sarathi Construction Pvt. Ltd. | Building With Purpose</title>
 
-    <title>Sarathi Construction Pvt. Ltd. | Construction & Project Management</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-
-        /* =========================================================
-           RESET
-        ========================================================= */
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #ff6b35;
+            --primary-dark: #e55a2b;
+            --secondary: #1a1a1a;
+            --accent: #ffd23f;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --white: #ffffff;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-800: #2d3436;
+
+            --gradient: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.10);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
 
         html {
@@ -46,288 +49,146 @@
             scroll-padding-top: 90px;
         }
 
-        :root {
-
-            --primary: #B56D2B;
-            --primary-dark: #92531D;
-
-            --dark: #171717;
-            --dark-soft: #222222;
-
-            --text: #303030;
-            --muted: #707070;
-
-            --background: #F5F4F1;
-            --white: #FFFFFF;
-
-            --border: #E2E0DB;
-
-            --container: 1280px;
-
-            --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.06);
-
-            --shadow:
-                0 15px 50px rgba(0, 0, 0, 0.10);
-
-            --transition:
-                all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            overflow-x: hidden;
+            background: #fff;
         }
 
-        body {
-            font-family: "Manrope", sans-serif;
-            color: var(--text);
-            background: var(--white);
-            line-height: 1.7;
-            overflow-x: hidden;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
 
         img {
-            max-width: 100%;
             display: block;
+            max-width: 100%;
         }
 
-        a {
-            color: inherit;
-        }
-
-        button,
-        input,
-        textarea {
-            font-family: inherit;
-        }
-
-        button {
-            cursor: pointer;
-        }
-
-
-        /* =========================================================
-           UTILITY
-        ========================================================= */
-
-        .container {
-            width: min(var(--container), calc(100% - 48px));
-            margin: 0 auto;
-        }
-
-        .section {
-            padding: 110px 0;
-        }
-
-        .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-
-            color: var(--primary);
-
-            font-size: 12px;
-            font-weight: 800;
-
-            letter-spacing: 2px;
-            text-transform: uppercase;
-
-            margin-bottom: 18px;
-        }
-
-        .section-label::before {
-            content: "";
-            width: 32px;
-            height: 1px;
-            background: var(--primary);
-        }
-
-        .section-title {
-            color: var(--dark);
-
-            font-size: clamp(36px, 4vw, 58px);
-            line-height: 1.08;
-
-            letter-spacing: -2px;
-
-            font-weight: 800;
-
-            max-width: 760px;
-        }
-
-        .section-description {
-            max-width: 680px;
-
-            margin-top: 22px;
-
-            color: var(--muted);
-
-            font-size: 16px;
-            line-height: 1.9;
-        }
-
-
-        /* =========================================================
+        /* =========================
            TOP BAR
-        ========================================================= */
+        ========================= */
 
         .topbar {
-            background: var(--dark);
-            color: rgba(255, 255, 255, 0.82);
-
-            font-size: 13px;
+            background: var(--secondary);
+            color: white;
+            padding: 0.75rem 0;
+            font-size: 0.875rem;
         }
 
         .topbar-container {
-            min-height: 42px;
-
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            gap: 20px;
-        }
-
-        .topbar-left,
-        .topbar-right {
-            display: flex;
-            align-items: center;
-            gap: 24px;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .topbar-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0.5rem;
         }
 
         .topbar-item i {
             color: var(--primary);
         }
 
-        .topbar a {
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .topbar a:hover {
+        .topbar-item a {
             color: white;
+            text-decoration: none;
         }
 
+        .topbar-item a:hover {
+            color: var(--primary);
+        }
 
-        /* =========================================================
+        /* =========================
            NAVBAR
-        ========================================================= */
+        ========================= */
 
         .navbar {
             position: sticky;
             top: 0;
-
             z-index: 1000;
-
-            background: rgba(255, 255, 255, 0.96);
-
-            backdrop-filter: blur(14px);
-
-            border-bottom: 1px solid transparent;
-
-            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
         }
 
         .navbar.scrolled {
-            border-bottom-color: var(--border);
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
         }
 
         .nav-container {
-            height: 82px;
-
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
+            height: 85px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-
+            gap: 0.75rem;
             text-decoration: none;
+            color: var(--secondary);
         }
 
-        .logo-mark {
-            width: 42px;
-            height: 42px;
-
-            background: var(--dark);
-
-            color: white;
-
-            display: grid;
-            place-items: center;
-
-            font-size: 17px;
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary);
         }
 
         .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-name {
-            color: var(--dark);
-
-            font-size: 17px;
-            font-weight: 800;
-
-            letter-spacing: 0.5px;
-        }
-
-        .logo-subtitle {
-            color: var(--muted);
-
-            font-size: 9px;
-            font-weight: 700;
-
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
             letter-spacing: 2px;
-            text-transform: uppercase;
         }
 
         .nav-menu {
             display: flex;
-            align-items: center;
-            gap: 34px;
-
+            gap: 2.5rem;
             list-style: none;
+            align-items: center;
         }
 
         .nav-menu a {
-            position: relative;
-
+            color: var(--text);
             text-decoration: none;
-
-            color: #444;
-
-            font-size: 13px;
-            font-weight: 700;
-
-            transition: var(--transition);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+            position: relative;
         }
 
         .nav-menu a::after {
-            content: "";
-
+            content: '';
             position: absolute;
-
+            bottom: -5px;
             left: 0;
-            bottom: -8px;
-
             width: 0;
-            height: 2px;
-
+            height: 3px;
             background: var(--primary);
-
-            transition: width 0.3s ease;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--primary);
+            transition: width 0.3s;
         }
 
         .nav-menu a:hover::after,
@@ -335,1333 +196,870 @@
             width: 100%;
         }
 
-        .nav-cta {
-            padding: 12px 20px;
-
-            background: var(--primary);
-            color: white !important;
-
-            font-size: 12px !important;
-
-            text-transform: uppercase;
-
-            letter-spacing: 0.5px;
-        }
-
-        .nav-cta::after {
-            display: none;
-        }
-
-        .nav-cta:hover {
-            background: var(--primary-dark);
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary);
         }
 
         .mobile-toggle {
             display: none;
-
-            width: 44px;
-            height: 44px;
-
-            border: 1px solid var(--border);
-            background: white;
-
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
             gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
         }
 
         .mobile-toggle span {
-            width: 20px;
-            height: 2px;
-
-            background: var(--dark);
-
-            transition: var(--transition);
+            width: 28px;
+            height: 3px;
+            background: var(--secondary);
+            transition: all 0.3s;
+            border-radius: 3px;
         }
 
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
 
-        /* =========================================================
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* =========================
            HERO
-        ========================================================= */
+        ========================= */
 
         .hero {
             position: relative;
-
-            min-height: 680px;
-            height: calc(100vh - 124px);
-
+            height: 88vh;
+            min-height: 600px;
             display: flex;
             align-items: center;
-
             overflow: hidden;
-
-            background: var(--dark);
         }
 
         .hero-slider {
             position: absolute;
             inset: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .hero-slide {
             position: absolute;
             inset: 0;
-
+            width: 100%;
+            height: 100%;
             opacity: 0;
-
-            transition: opacity 1.2s ease;
+            transition: opacity 1.5s ease-in-out;
         }
 
         .hero-slide.active {
             opacity: 1;
         }
 
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(26, 26, 26, 0.88) 0%,
+                    rgba(26, 26, 26, 0.62) 48%,
+                    rgba(255, 107, 53, 0.50) 100%
+                );
+            z-index: 1;
+        }
+
         .hero-slide img {
             width: 100%;
             height: 100%;
-
             object-fit: cover;
-        }
-
-        .hero-slide::after {
-            content: "";
-
-            position: absolute;
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(15, 15, 15, 0.90) 0%,
-                    rgba(15, 15, 15, 0.72) 42%,
-                    rgba(15, 15, 15, 0.18) 100%
-                );
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-
-            width: min(var(--container), calc(100% - 48px));
-
+            max-width: 1400px;
+            width: 100%;
             margin: 0 auto;
-
+            padding: 0 2rem;
             color: white;
         }
 
-        .hero-eyebrow {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
-            margin-bottom: 24px;
-
-            color: rgba(255, 255, 255, 0.8);
-
-            font-size: 12px;
-            font-weight: 800;
-
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-        }
-
-        .hero-eyebrow::before {
-            content: "";
-
-            width: 38px;
-            height: 2px;
-
+        .hero-label {
+            display: inline-block;
             background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 15px) 0,
+                100% 100%,
+                0 100%
+            );
         }
 
         .hero h1 {
-            max-width: 820px;
-
-            margin-bottom: 25px;
-
-            font-size: clamp(48px, 6vw, 82px);
-
-            line-height: 0.98;
-
-            letter-spacing: -3px;
-
-            font-weight: 800;
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.05;
+            max-width: 850px;
         }
 
-        .hero h1 span {
-            color: #D99A60;
-        }
-
-        .hero-description {
+        .hero p {
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            margin-bottom: 2.5rem;
             max-width: 650px;
-
-            margin-bottom: 35px;
-
-            color: rgba(255, 255, 255, 0.80);
-
-            font-size: 17px;
-
-            line-height: 1.8;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.92);
         }
 
         .hero-buttons {
             display: flex;
+            gap: 1rem;
             flex-wrap: wrap;
-            gap: 12px;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-
-            min-height: 52px;
-
-            padding: 0 24px;
-
-            border: 1px solid transparent;
-
+            gap: 0.75rem;
+            padding: 1.1rem 2.5rem;
+            font-weight: 600;
             text-decoration: none;
-
-            font-size: 12px;
-            font-weight: 800;
-
-            letter-spacing: 0.7px;
             text-transform: uppercase;
-
-            transition: var(--transition);
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-primary {
             background: var(--primary);
             color: white;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 20px) 0,
+                100% 100%,
+                0 100%
+            );
         }
 
         .btn-primary:hover {
             background: var(--primary-dark);
-            transform: translateY(-2px);
+            transform: translateX(5px);
         }
 
-        .btn-outline {
-            border-color: rgba(255, 255, 255, 0.55);
+        .btn-secondary {
+            background: transparent;
             color: white;
-
-            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid white;
+            clip-path: polygon(
+                20px 0,
+                100% 0,
+                100% 100%,
+                0 100%
+            );
         }
 
-        .btn-outline:hover {
+        .btn-secondary:hover {
             background: white;
-            color: var(--dark);
-            transform: translateY(-2px);
-        }
-
-        .hero-meta {
-            position: absolute;
-
-            right: 48px;
-            bottom: 45px;
-
-            z-index: 3;
-
-            display: flex;
-            align-items: center;
-            gap: 25px;
-
-            color: rgba(255, 255, 255, 0.7);
-
-            font-size: 11px;
-            font-weight: 700;
-
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .hero-meta span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .hero-meta i {
             color: var(--primary);
+            transform: translateX(-5px);
         }
 
+        /* =========================
+           QUICK FACTS
+        ========================= */
 
-        /* =========================================================
-           INTRO / CREDIBILITY
-        ========================================================= */
-
-        .intro {
-            background: var(--white);
-
-            padding: 0;
+        .quick-facts {
+            position: relative;
+            z-index: 5;
+            margin-top: -65px;
+            padding: 0 2rem;
         }
 
-        .intro-grid {
+        .quick-facts-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: var(--shadow-lg);
             display: grid;
-
-            grid-template-columns: repeat(4, 1fr);
-
-            border-left: 1px solid var(--border);
-            border-right: 1px solid var(--border);
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        .intro-item {
-            min-height: 145px;
-
-            padding: 35px 30px;
-
-            border-right: 1px solid var(--border);
-
+        .fact {
+            padding: 2rem;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            border-right: 1px solid var(--gray-200);
+        }
+
+        .fact:last-child {
+            border-right: none;
+        }
+
+        .fact-icon {
+            width: 55px;
+            height: 55px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
             justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
         }
 
-        .intro-item:last-child {
-            border-right: 0;
+        .fact strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--secondary);
         }
 
-        .intro-number {
+        .fact span {
+            display: block;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           SECTION STYLES
+        ========================= */
+
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
             color: var(--primary);
-
-            font-size: 30px;
-            font-weight: 800;
-
-            margin-bottom: 4px;
-        }
-
-        .intro-title {
-            color: var(--dark);
-
-            font-size: 13px;
-            font-weight: 800;
-
+            font-weight: 700;
+            font-size: 0.875rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            display: block;
         }
 
-        .intro-description {
-            color: var(--muted);
-
-            font-size: 12px;
-
-            margin-top: 4px;
+        .section-title {
+            font-size: clamp(2.3rem, 5vw, 3.6rem);
+            color: var(--secondary);
+            margin-bottom: 1rem;
         }
 
+        .section-title span {
+            color: var(--primary);
+        }
 
-        /* =========================================================
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+        }
+
+        /* =========================
            ABOUT
-        ========================================================= */
-
-        .about {
-            background: var(--background);
-        }
+        ========================= */
 
         .about-grid {
             display: grid;
-
-            grid-template-columns: 0.95fr 1.05fr;
-
-            gap: 90px;
-
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
             align-items: center;
         }
 
-        .about-image-wrap {
+        .about-image-wrapper {
             position: relative;
-
-            padding-right: 30px;
-            padding-bottom: 30px;
+            height: 600px;
         }
 
-        .about-image-wrap::after {
-            content: "";
-
+        .about-image-wrapper::before {
+            content: '';
             position: absolute;
-
-            right: 0;
-            bottom: 0;
-
-            width: 70%;
-            height: 70%;
-
-            background: var(--primary);
-
-            z-index: 0;
+            top: -30px;
+            right: -30px;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient);
+            z-index: -1;
+            clip-path: polygon(
+                30px 0,
+                100% 0,
+                100% calc(100% - 30px),
+                calc(100% - 30px) 100%,
+                0 100%,
+                0 30px
+            );
         }
 
         .about-image {
-            position: relative;
-
-            z-index: 1;
-
             width: 100%;
-            height: 570px;
-
+            height: 100%;
             object-fit: cover;
+            clip-path: polygon(
+                30px 0,
+                100% 0,
+                100% calc(100% - 30px),
+                calc(100% - 30px) 100%,
+                0 100%,
+                0 30px
+            );
         }
 
-        .about-badge {
-            position: absolute;
-
-            left: -25px;
-            bottom: 50px;
-
-            z-index: 2;
-
-            background: var(--dark);
-            color: white;
-
-            padding: 22px 25px;
-
-            min-width: 180px;
-        }
-
-        .about-badge strong {
-            display: block;
-
-            font-size: 26px;
-            font-weight: 800;
-
-            color: white;
-        }
-
-        .about-badge span {
-            color: rgba(255, 255, 255, 0.65);
-
-            font-size: 11px;
-
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .about-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.25rem;
+            color: var(--secondary);
         }
 
         .about-content p {
-            color: var(--muted);
-
-            font-size: 15px;
-
-            line-height: 1.9;
-
-            margin-top: 22px;
+            margin-bottom: 1.25rem;
+            line-height: 1.85;
+            color: var(--text);
         }
 
-        .about-list {
+        .about-features {
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
-            gap: 18px;
-
-            margin-top: 30px;
+            gap: 1rem;
+            margin: 2rem 0;
         }
 
-        .about-list-item {
+        .feature-item {
             display: flex;
-
-            gap: 12px;
-
-            align-items: flex-start;
-        }
-
-        .about-list-icon {
-            color: var(--primary);
-
-            margin-top: 4px;
-        }
-
-        .about-list-item strong {
-            display: block;
-
-            color: var(--dark);
-
-            font-size: 13px;
-
-            margin-bottom: 2px;
-        }
-
-        .about-list-item span {
-            color: var(--muted);
-
-            font-size: 12px;
-        }
-
-        .chairman {
-            display: flex;
-
             align-items: center;
-            gap: 15px;
-
-            margin-top: 35px;
-
-            padding-top: 25px;
-
-            border-top: 1px solid var(--border);
+            gap: 0.75rem;
+            font-weight: 600;
+            color: var(--text);
         }
 
-        .chairman-line {
-            width: 35px;
-            height: 2px;
-
-            background: var(--primary);
+        .feature-item i {
+            color: var(--primary);
+            font-size: 1.15rem;
         }
 
-        .chairman strong {
-            display: block;
-
-            color: var(--dark);
-
-            font-size: 13px;
+        .chairman-info {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--gray-100);
+            border-left: 4px solid var(--primary);
         }
 
-        .chairman span {
-            color: var(--muted);
-
-            font-size: 11px;
-
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
+        .chairman-info strong {
+            color: var(--secondary);
+            font-size: 1.125rem;
         }
 
+        .chairman-info span {
+            color: var(--text-light);
+        }
 
-        /* =========================================================
+        /* =========================
            SERVICES
-        ========================================================= */
+        ========================= */
 
         .services {
-            background: white;
-        }
-
-        .services-header {
-            display: flex;
-
-            align-items: flex-end;
-            justify-content: space-between;
-
-            gap: 40px;
-
-            margin-bottom: 55px;
+            background: var(--gray-100);
         }
 
         .services-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
-            gap: 1px;
-
-            background: var(--border);
-
-            border: 1px solid var(--border);
+            gap: 2.5rem;
         }
 
         .service-card {
             background: white;
-
-            transition: var(--transition);
-
             overflow: hidden;
+            transition: all 0.4s;
+            position: relative;
+            box-shadow: var(--shadow);
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-
-            box-shadow: var(--shadow);
-
-            position: relative;
-
-            z-index: 2;
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
         }
 
         .service-image {
-            height: 260px;
-
+            width: 100%;
+            height: 280px;
             overflow: hidden;
+            position: relative;
         }
 
         .service-image img {
             width: 100%;
             height: 100%;
-
             object-fit: cover;
-
-            transition: transform 0.7s ease;
+            transition: transform 0.6s;
         }
 
         .service-card:hover .service-image img {
-            transform: scale(1.05);
+            transform: scale(1.08);
+        }
+
+        .service-icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            z-index: 2;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            transform: translateX(-50%) rotate(45deg);
         }
 
         .service-content {
-            padding: 30px;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
         }
 
-        .service-number {
-            color: var(--primary);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            letter-spacing: 2px;
-        }
-
-        .service-content h3 {
-            color: var(--dark);
-
-            font-size: 21px;
-            font-weight: 800;
-
-            letter-spacing: -0.5px;
-
-            margin: 12px 0;
+        .service-content h4 {
+            font-size: 1.55rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
         }
 
         .service-content p {
-            color: var(--muted);
-
-            font-size: 13px;
-
+            color: var(--text-light);
             line-height: 1.8;
         }
 
-        .service-link {
-            display: inline-flex;
-
-            align-items: center;
-            gap: 8px;
-
-            margin-top: 20px;
-
-            color: var(--dark);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            text-decoration: none;
-
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-        }
-
-        .service-link i {
-            color: var(--primary);
-
-            transition: var(--transition);
-        }
-
-        .service-link:hover i {
-            transform: translateX(4px);
-        }
-
-
-        /* =========================================================
-           APPROACH
-        ========================================================= */
-
-        .approach {
-            background: var(--dark);
-
-            color: white;
-        }
-
-        .approach-grid {
-            display: grid;
-
-            grid-template-columns: 0.8fr 1.2fr;
-
-            gap: 100px;
-        }
-
-        .approach .section-title {
-            color: white;
-        }
-
-        .approach .section-description {
-            color: rgba(255, 255, 255, 0.62);
-        }
-
-        .approach-steps {
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .approach-step {
-            display: grid;
-
-            grid-template-columns: 65px 1fr;
-
-            gap: 25px;
-
-            padding: 28px 0;
-
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .step-number {
-            color: var(--primary);
-
-            font-size: 13px;
-            font-weight: 800;
-
-            letter-spacing: 1px;
-        }
-
-        .approach-step h3 {
-            color: white;
-
-            font-size: 18px;
-            font-weight: 800;
-
-            margin-bottom: 7px;
-        }
-
-        .approach-step p {
-            color: rgba(255, 255, 255, 0.58);
-
-            font-size: 13px;
-
-            line-height: 1.8;
-        }
-
-
-        /* =========================================================
+        /* =========================
            PROJECTS
-        ========================================================= */
+        ========================= */
 
-        .projects {
-            background: var(--background);
-        }
-
-        .projects-header {
+        .portfolio-filter {
             display: flex;
-
-            justify-content: space-between;
-            align-items: flex-end;
-
-            gap: 40px;
-
-            margin-bottom: 45px;
-        }
-
-        .filter-buttons {
-            display: flex;
-
-            gap: 8px;
-
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            padding: 11px 18px;
-
-            border: 1px solid var(--border);
-
+            padding: 0.75rem 2rem;
             background: white;
-
-            color: var(--muted);
-
-            font-size: 11px;
-            font-weight: 800;
-
+            border: 2px solid var(--gray-200);
+            color: var(--text);
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-
-            transition: var(--transition);
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
         }
 
         .filter-btn:hover,
         .filter-btn.active {
-            background: var(--dark);
+            background: var(--primary);
             color: white;
-
-            border-color: var(--dark);
+            border-color: var(--primary);
+            transform: translateY(-3px);
         }
 
         .portfolio-grid {
             display: grid;
-
-            grid-template-columns: repeat(12, 1fr);
-
-            gap: 18px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
         }
 
         .portfolio-item {
             position: relative;
-
-            height: 400px;
-
             overflow: hidden;
-
+            height: 400px;
             cursor: pointer;
-
-            background: var(--dark);
+            transition: all 0.4s;
         }
 
-        .portfolio-item:nth-child(1),
-        .portfolio-item:nth-child(4) {
-            grid-column: span 7;
-        }
-
-        .portfolio-item:nth-child(2),
-        .portfolio-item:nth-child(3),
-        .portfolio-item:nth-child(5),
-        .portfolio-item:nth-child(6),
-        .portfolio-item:nth-child(7) {
-            grid-column: span 5;
+        .portfolio-item:hover {
+            transform: translateY(-5px);
         }
 
         .portfolio-image {
             width: 100%;
             height: 100%;
-
             object-fit: cover;
-
-            transition: transform 0.7s ease;
-        }
-
-        .portfolio-item::after {
-            content: "";
-
-            position: absolute;
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    to top,
-                    rgba(10, 10, 10, 0.9),
-                    rgba(10, 10, 10, 0.05) 65%
-                );
+            transition: transform 0.6s;
         }
 
         .portfolio-item:hover .portfolio-image {
-            transform: scale(1.04);
+            transform: scale(1.08);
         }
 
         .portfolio-overlay {
             position: absolute;
-
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            z-index: 2;
-
-            padding: 30px;
-
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(26, 26, 26, 0.95) 0%,
+                rgba(26, 26, 26, 0.2) 70%,
+                transparent 100%
+            );
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
             color: white;
+            opacity: 0;
+            transition: opacity 0.4s;
         }
 
-        .portfolio-category {
-            color: #D99A60;
-
-            font-size: 10px;
-            font-weight: 800;
-
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
         }
 
         .portfolio-title {
-            margin: 7px 0;
-
-            color: white;
-
-            font-size: 24px;
-            font-weight: 800;
-
-            letter-spacing: -0.5px;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
         .portfolio-location {
             display: flex;
-
             align-items: center;
-            gap: 7px;
-
-            color: rgba(255, 255, 255, 0.65);
-
-            font-size: 11px;
-        }
-
-        .portfolio-location i {
+            gap: 0.5rem;
             color: var(--primary);
+            font-weight: 600;
         }
 
-        .portfolio-item.hidden {
-            display: none;
-        }
-
-
-        /* =========================================================
-           CTA
-        ========================================================= */
-
-        .cta {
-            position: relative;
-
-            padding: 90px 0;
-
-            background:
-                linear-gradient(
-                    110deg,
-                    rgba(20, 20, 20, 0.97),
-                    rgba(20, 20, 20, 0.84)
-                ),
-                url("img/carousel-1.jpg") center/cover;
-        }
-
-        .cta-inner {
-            display: flex;
-
-            justify-content: space-between;
-            align-items: center;
-
-            gap: 50px;
-        }
-
-        .cta h2 {
-            color: white;
-
-            font-size: clamp(32px, 4vw, 52px);
-
-            line-height: 1.1;
-
-            letter-spacing: -1.5px;
-
-            font-weight: 800;
-        }
-
-        .cta p {
-            max-width: 600px;
-
-            margin-top: 15px;
-
-            color: rgba(255, 255, 255, 0.65);
-
-            font-size: 14px;
-        }
-
-        .cta-actions {
-            display: flex;
-
-            gap: 10px;
-
-            flex-shrink: 0;
-        }
-
-
-        /* =========================================================
+        /* =========================
            CONTACT
-        ========================================================= */
-
-        .contact {
-            background: white;
-        }
+        ========================= */
 
         .contact-grid {
             display: grid;
-
-            grid-template-columns: 0.8fr 1.2fr;
-
-            gap: 80px;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
         }
 
-        .contact-info p {
-            color: var(--muted);
+        .contact-info h3 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
 
-            font-size: 14px;
-
-            line-height: 1.9;
-
-            margin-top: 20px;
+        .contact-info > p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
         }
 
         .contact-details {
             display: flex;
-
             flex-direction: column;
-
-            gap: 25px;
-
-            margin-top: 35px;
+            gap: 1.5rem;
         }
 
         .contact-item {
             display: flex;
-
-            gap: 16px;
-
-            align-items: flex-start;
+            align-items: center;
+            gap: 1.25rem;
         }
 
         .contact-icon {
-            width: 44px;
-            height: 44px;
-
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
             flex-shrink: 0;
-
-            background: var(--background);
-
-            color: var(--primary);
-
-            display: grid;
-            place-items: center;
         }
 
-        .contact-item h4 {
-            color: var(--dark);
-
-            font-size: 11px;
-            font-weight: 800;
-
+        .contact-text h4 {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
             text-transform: uppercase;
-
             letter-spacing: 1px;
-
-            margin-bottom: 3px;
         }
 
-        .contact-item a,
-        .contact-item span {
-            color: var(--muted);
-
-            font-size: 13px;
-
+        .contact-text p,
+        .contact-text a {
+            color: var(--secondary);
+            font-weight: 600;
+            margin: 0;
             text-decoration: none;
         }
 
-        .contact-item a:hover {
+        .contact-text a:hover {
             color: var(--primary);
         }
 
         .contact-form {
-            padding: 40px;
-
-            background: var(--background);
-
-            border: 1px solid var(--border);
+            background: var(--gray-100);
+            padding: 3rem;
         }
 
-        .form-heading {
-            color: var(--dark);
+        .contact-form-header {
+            margin-bottom: 2rem;
+        }
 
-            font-size: 24px;
-            font-weight: 800;
+        .contact-form-header h3 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
 
-            margin-bottom: 25px;
+        .contact-form-header p {
+            color: var(--text-light);
         }
 
         .form-row {
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
-            gap: 15px;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
         }
 
         .form-group label {
             display: block;
-
-            margin-bottom: 7px;
-
-            color: var(--dark);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            text-transform: uppercase;
-            letter-spacing: 0.6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
         }
 
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-
-            padding: 14px 15px;
-
-            border: 1px solid var(--border);
-
+            padding: 1.05rem;
+            border: 2px solid var(--gray-200);
             background: white;
-
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s;
             color: var(--text);
-
-            font-size: 13px;
-
-            outline: none;
-
-            transition: var(--transition);
-        }
-
-        .form-group textarea {
-            min-height: 140px;
-
-            resize: vertical;
         }
 
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
+            outline: none;
             border-color: var(--primary);
         }
 
-        .form-submit {
-            width: 100%;
-
-            margin-top: 5px;
-
-            border: none;
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
         }
 
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+        }
 
-        /* =========================================================
+        /* =========================
            FOOTER
-        ========================================================= */
+        ========================= */
 
         footer {
-            background: var(--dark);
-
+            background: var(--secondary);
             color: white;
-
-            padding: 70px 0 25px;
+            padding: 4rem 2rem 2rem;
         }
 
-        .footer-grid {
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
             display: grid;
-
-            grid-template-columns: 1.4fr 0.7fr 0.8fr;
-
-            gap: 70px;
-
-            padding-bottom: 55px;
-
-            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        }
-
-        .footer-brand {
-            max-width: 430px;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 4rem;
         }
 
         .footer-logo {
-            display: flex;
-
-            align-items: center;
-
-            gap: 12px;
-
-            margin-bottom: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            color: white;
         }
 
-        .footer-logo-mark {
-            width: 40px;
-            height: 40px;
-
-            background: var(--primary);
-
-            display: grid;
-            place-items: center;
+        .footer-logo i {
+            color: var(--primary);
         }
 
-        .footer-logo strong {
-            font-size: 17px;
-            font-weight: 800;
-        }
-
-        .footer-brand p {
-            color: rgba(255, 255, 255, 0.55);
-
-            font-size: 13px;
-
-            line-height: 1.9;
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.8;
+            max-width: 500px;
         }
 
         .footer-heading {
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
             color: white;
-
-            font-size: 12px;
-            font-weight: 800;
-
-            text-transform: uppercase;
-            letter-spacing: 1px;
-
-            margin-bottom: 20px;
         }
 
         .footer-links {
             list-style: none;
+        }
 
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 11px;
+        .footer-links li {
+            margin-bottom: 0.75rem;
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.55);
-
-            font-size: 12px;
-
+            color: rgba(255, 255, 255, 0.75);
             text-decoration: none;
-
-            transition: var(--transition);
+            transition: color 0.3s;
         }
 
         .footer-links a:hover {
-            color: white;
-            padding-left: 4px;
+            color: var(--primary);
         }
 
-        .footer-contact {
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 13px;
-        }
-
-        .footer-contact a,
-        .footer-contact span {
-            display: flex;
-
-            gap: 10px;
-
-            align-items: flex-start;
-
-            color: rgba(255, 255, 255, 0.55);
-
-            font-size: 12px;
-
-            text-decoration: none;
+        .footer-contact p {
+            margin-bottom: 0.8rem;
+            color: rgba(255, 255, 255, 0.75);
         }
 
         .footer-contact i {
             color: var(--primary);
-
-            margin-top: 4px;
+            width: 22px;
         }
 
         .social-links {
             display: flex;
-
-            gap: 8px;
-
-            margin-top: 25px;
+            gap: 1rem;
+            margin-top: 1.5rem;
         }
 
         .social-links a {
-            width: 38px;
-            height: 38px;
-
-            display: grid;
-            place-items: center;
-
-            border: 1px solid rgba(255, 255, 255, 0.15);
-
-            color: rgba(255, 255, 255, 0.65);
-
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
             text-decoration: none;
-
-            transition: var(--transition);
+            transition: all 0.3s;
         }
 
         .social-links a:hover {
-            background: var(--primary);
-
-            border-color: var(--primary);
-
-            color: white;
+            background: white;
+            color: var(--primary);
+            transform: translateY(-5px);
         }
 
         .footer-bottom {
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: center;
-
-            gap: 20px;
-
-            padding-top: 25px;
-
-            color: rgba(255, 255, 255, 0.38);
-
-            font-size: 11px;
+            max-width: 1400px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
         }
 
-
-        /* =========================================================
-           WHATSAPP
-        ========================================================= */
-
-        .whatsapp {
-            position: fixed;
-
-            right: 22px;
-            bottom: 22px;
-
-            z-index: 900;
-
-            width: 52px;
-            height: 52px;
-
-            display: grid;
-            place-items: center;
-
-            background: #25D366;
-
-            color: white;
-
-            border-radius: 50%;
-
-            font-size: 24px;
-
-            text-decoration: none;
-
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-
-            transition: var(--transition);
-        }
-
-        .whatsapp:hover {
-            transform: translateY(-4px) scale(1.04);
-        }
-
-
-        /* =========================================================
+        /* =========================
            SCROLL TOP
-        ========================================================= */
+        ========================= */
 
         .scroll-top {
             position: fixed;
-
-            right: 22px;
-            bottom: 88px;
-
-            z-index: 899;
-
-            width: 42px;
-            height: 42px;
-
-            border: 1px solid var(--border);
-
-            background: white;
-
-            color: var(--dark);
-
-            display: grid;
-            place-items: center;
-
+            bottom: 2rem;
+            right: 2rem;
+            width: 55px;
+            height: 55px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
             opacity: 0;
             visibility: hidden;
-
-            transition: var(--transition);
+            transition: all 0.4s;
+            z-index: 999;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
         }
 
         .scroll-top.visible {
@@ -1670,741 +1068,383 @@
         }
 
         .scroll-top:hover {
-            background: var(--dark);
-            color: white;
+            background: var(--primary-dark);
+            transform: translateY(-5px);
         }
 
-
-        /* =========================================================
+        /* =========================
            RESPONSIVE
-        ========================================================= */
+        ========================= */
 
         @media (max-width: 1100px) {
-
-            .nav-menu {
-                gap: 20px;
-            }
-
-            .about-grid {
-                gap: 55px;
-            }
-
-            .approach-grid,
+            .about-grid,
             .contact-grid {
-                gap: 50px;
+                grid-template-columns: 1fr;
+                gap: 3rem;
             }
 
-            .footer-grid {
-                gap: 40px;
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
-
-        @media (max-width: 900px) {
-
-            .topbar-left {
-                display: none;
-            }
-
+        @media (max-width: 768px) {
             .topbar-container {
                 justify-content: center;
+                text-align: center;
             }
 
-            .nav-menu {
-                position: fixed;
-
-                left: 0;
-                right: 0;
-                top: 82px;
-
-                padding: 25px;
-
-                background: white;
-
-                flex-direction: column;
-
-                align-items: flex-start;
-
-                gap: 20px;
-
-                border-bottom: 1px solid var(--border);
-
-                box-shadow: var(--shadow);
-
-                transform: translateY(-150%);
-
-                transition: transform 0.35s ease;
-            }
-
-            .nav-menu.active {
-                transform: translateY(0);
+            .topbar-item {
+                font-size: 0.8rem;
             }
 
             .mobile-toggle {
                 display: flex;
             }
 
-            .mobile-toggle.active span:nth-child(1) {
-                transform: translateY(7px) rotate(45deg);
-            }
-
-            .mobile-toggle.active span:nth-child(2) {
-                opacity: 0;
-            }
-
-            .mobile-toggle.active span:nth-child(3) {
-                transform: translateY(-7px) rotate(-45deg);
-            }
-
-            .nav-cta {
-                width: 100%;
-                text-align: center;
-            }
-
-            .hero {
-                height: 650px;
-            }
-
-            .intro-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .intro-item:nth-child(2) {
-                border-right: 0;
-            }
-
-            .intro-item:nth-child(-n+2) {
-                border-bottom: 1px solid var(--border);
-            }
-
-            .about-grid,
-            .approach-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-header,
-            .services-header,
-            .cta-inner {
-                align-items: flex-start;
-
-                flex-direction: column;
-            }
-
-            .portfolio-item,
-            .portfolio-item:nth-child(n) {
-                grid-column: span 6;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .footer-brand {
-                grid-column: span 2;
-            }
-        }
-
-
-        @media (max-width: 600px) {
-
-            .container {
-                width: min(100% - 30px, var(--container));
-            }
-
-            .topbar {
-                display: none;
-            }
-
-            .nav-container {
-                height: 72px;
-            }
-
             .nav-menu {
-                top: 72px;
+                position: fixed;
+                left: -100%;
+                top: 85px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s;
+                gap: 1.5rem;
+                align-items: flex-start;
             }
 
-            .logo-name {
-                font-size: 15px;
+            .nav-menu.active {
+                left: 0;
             }
 
-            .logo-subtitle {
-                font-size: 8px;
+            .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .logo i {
+                font-size: 2rem;
             }
 
             .hero {
-                height: 650px;
-                min-height: 0;
-            }
-
-            .hero-content {
-                width: calc(100% - 30px);
+                height: 72vh;
+                min-height: 520px;
             }
 
             .hero h1 {
-                font-size: 47px;
-
-                letter-spacing: -2px;
+                font-size: clamp(2.8rem, 12vw, 4.5rem);
             }
 
-            .hero-description {
-                font-size: 14px;
+            section {
+                padding: 4.5rem 1.5rem;
             }
 
-            .hero-meta {
-                left: 15px;
-                right: auto;
-
-                bottom: 25px;
-
-                flex-direction: column;
-
-                align-items: flex-start;
-
-                gap: 8px;
+            .quick-facts {
+                margin-top: 0;
+                padding: 0 1.5rem;
             }
 
-            .section {
-                padding: 75px 0;
-            }
-
-            .section-title {
-                font-size: 38px;
-            }
-
-            .intro-grid {
+            .quick-facts-inner {
                 grid-template-columns: 1fr;
             }
 
-            .intro-item {
-                border-right: 0;
-
-                border-bottom: 1px solid var(--border);
+            .fact {
+                border-right: none;
+                border-bottom: 1px solid var(--gray-200);
             }
 
-            .intro-item:last-child {
-                border-bottom: 0;
+            .fact:last-child {
+                border-bottom: none;
             }
 
-            .about-image {
-                height: 430px;
+            .about-image-wrapper {
+                height: 450px;
             }
 
-            .about-badge {
-                left: 10px;
-                bottom: 20px;
-            }
-
-            .about-list {
-                grid-template-columns: 1fr;
-            }
-
+            .services-grid,
             .portfolio-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .portfolio-item,
-            .portfolio-item:nth-child(n) {
-                grid-column: span 1;
-
-                height: 340px;
             }
 
             .form-row {
                 grid-template-columns: 1fr;
             }
 
-            .contact-form {
-                padding: 25px;
-            }
-
-            .footer-grid {
+            .about-features {
                 grid-template-columns: 1fr;
             }
 
-            .footer-brand {
-                grid-column: span 1;
+            .contact-form {
+                padding: 2rem;
             }
 
-            .footer-bottom {
-                flex-direction: column;
-
-                align-items: flex-start;
-            }
-
-            .cta-actions {
-                width: 100%;
-
-                flex-direction: column;
-            }
-
-            .cta-actions .btn {
-                width: 100%;
-            }
-
-            .whatsapp {
-                right: 15px;
-                bottom: 15px;
-            }
-
-            .scroll-top {
-                right: 15px;
-                bottom: 80px;
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
             }
         }
 
+        @media (max-width: 480px) {
+            .topbar-container {
+                padding: 0 1rem;
+            }
+
+            .topbar {
+                padding: 0.65rem 0;
+            }
+
+            .topbar-item {
+                font-size: 0.75rem;
+            }
+
+            .nav-container {
+                padding: 0 1.25rem;
+            }
+
+            .hero-content {
+                padding: 0 1.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .portfolio-filter {
+                flex-direction: column;
+            }
+
+            .filter-btn {
+                width: 100%;
+            }
+
+            .scroll-top {
+                right: 1rem;
+                bottom: 1rem;
+            }
+        }
+
+        /* =========================
+           ACCESSIBILITY
+        ========================= */
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
     </style>
 </head>
 
-
 <body>
 
+    <!-- =========================
+         TOP BAR
+    ========================== -->
 
-<!-- =========================================================
-     TOP BAR
-========================================================= -->
-
-<div class="topbar">
-
-    <div class="container topbar-container">
-
-        <div class="topbar-left">
+    <div class="topbar">
+        <div class="topbar-container">
 
             <div class="topbar-item">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <span>Tokha-7, Kathmandu, Nepal</span>
             </div>
 
-        </div>
-
-        <div class="topbar-right">
-
             <div class="topbar-item">
-                <i class="fa-solid fa-envelope"></i>
-
+                <i class="fas fa-envelope"></i>
                 <a href="mailto:sarathiyb@gmail.com">
                     sarathiyb@gmail.com
                 </a>
             </div>
 
             <div class="topbar-item">
-                <i class="fa-solid fa-phone"></i>
-
+                <i class="fas fa-phone"></i>
                 <a href="tel:+9779851055392">
                     +977 9851055392
                 </a>
             </div>
 
         </div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
-
-<nav class="navbar">
-
-    <div class="container nav-container">
-
-        <a href="#home" class="logo">
-
-            <div class="logo-mark">
-                <i class="fa-solid fa-building"></i>
-            </div>
-
-            <div class="logo-text">
-
-                <span class="logo-name">
-                    SARATHI CONSTRUCTION
-                </span>
-
-                <span class="logo-subtitle">
-                    Pvt. Ltd.
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <button
-            class="mobile-toggle"
-            id="mobileToggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-
-        <ul class="nav-menu" id="navMenu">
-
-            <li>
-                <a href="#home" class="active">
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="#about">
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="#services">
-                    Services
-                </a>
-            </li>
-
-            <li>
-                <a href="#projects">
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="#approach">
-                    Our Approach
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact" class="nav-cta">
-                    Get in Touch
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section class="hero" id="home">
-
-    <div class="hero-slider">
-
-        <div class="hero-slide active">
-
-            <img
-                src="img/carousel-1.jpg"
-                alt="Sarathi Construction project">
-
-        </div>
-
-        <div class="hero-slide">
-
-            <img
-                src="img/carousel-2.jpg"
-                alt="Sarathi Construction building project">
-
-        </div>
-
     </div>
 
 
-    <div class="hero-content">
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-        <div class="hero-eyebrow">
-            Sarathi Construction Pvt. Ltd.
-        </div>
+    <nav class="navbar">
 
-        <h1>
-            Building with
-            <span>purpose.</span>
-        </h1>
+        <div class="nav-container">
 
-        <p class="hero-description">
-            Construction and project management for residential,
-            commercial and institutional projects, with a practical
-            focus on quality, coordination and dependable execution.
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn btn-primary">
-
-                View Our Projects
-
-                <i class="fa-solid fa-arrow-right"></i>
-
+            <a href="#home" class="logo">
+                <i class="fas fa-building"></i>
+                <span class="logo-text">SARATHI CONSTRUCTION</span>
             </a>
 
-            <a href="#contact" class="btn btn-outline">
+            <button
+                class="mobile-toggle"
+                id="mobileToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                Talk to Us
+            <ul class="nav-menu" id="navMenu">
 
-            </a>
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
 
-        </div>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-    </div>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
 
+                <li>
+                    <a href="#portfolio">Projects</a>
+                </li>
 
-    <div class="hero-meta">
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-        <span>
-            <i class="fa-solid fa-location-dot"></i>
-            Kathmandu, Nepal
-        </span>
-
-        <span>
-            <i class="fa-solid fa-building"></i>
-            Construction & Management
-        </span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CREDIBILITY STRIP
-========================================================= -->
-
-<section class="intro">
-
-    <div class="container intro-grid">
-
-        <!--
-            IMPORTANT:
-            Replace these figures with verified company figures.
-        -->
-
-        <div class="intro-item">
-
-            <div class="intro-number">
-                10+
-            </div>
-
-            <div class="intro-title">
-                Years of Experience
-            </div>
-
-            <div class="intro-description">
-                Replace with verified figure
-            </div>
+            </ul>
 
         </div>
 
+    </nav>
 
-        <div class="intro-item">
 
-            <div class="intro-number">
-                25+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-slider">
+
+            <div class="hero-slide active">
+                <img
+                    src="img/carousel-1.jpg"
+                    alt="Sarathi Construction project"
+                >
             </div>
 
-            <div class="intro-title">
-                Projects
-            </div>
-
-            <div class="intro-description">
-                Replace with verified figure
+            <div class="hero-slide">
+                <img
+                    src="img/carousel-2.jpg"
+                    alt="Sarathi Construction building project"
+                >
             </div>
 
         </div>
 
+        <div class="hero-content">
 
-        <div class="intro-item">
-
-            <div class="intro-number">
-                3
-            </div>
-
-            <div class="intro-title">
-                Core Service Areas
-            </div>
-
-            <div class="intro-description">
-                Construction, planning & design
-            </div>
-
-        </div>
-
-
-        <div class="intro-item">
-
-            <div class="intro-number">
-                KTM
-            </div>
-
-            <div class="intro-title">
-                Based in Kathmandu
-            </div>
-
-            <div class="intro-description">
-                Serving clients across Nepal
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
-<section class="section about" id="about">
-
-    <div class="container about-grid">
-
-
-        <div class="about-image-wrap">
-
-            <img
-                src="img/about.jpg"
-                alt="Sarathi Construction"
-                class="about-image">
-
-            <div class="about-badge">
-
-                <strong>Sarathi</strong>
-
-                <span>
-                    Construction Pvt. Ltd.
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="about-content">
-
-            <span class="section-label">
-                About the Company
+            <span class="hero-label">
+                Established 2018
             </span>
 
-            <h2 class="section-title">
-                Practical construction.
-                Thoughtful execution.
-            </h2>
+            <h1>
+                Building With Purpose. Delivering With Care.
+            </h1>
 
             <p>
-                Sarathi Construction Pvt. Ltd. provides construction,
-                planning and project management services for clients
-                looking for dependable execution and lasting results.
+                Sarathi Construction has been working on residential,
+                commercial and infrastructure projects since 2018,
+                bringing together practical planning, skilled workmanship
+                and close attention to every stage of construction.
             </p>
 
-            <p>
-                Our work covers residential, commercial and institutional
-                projects. We approach each project with attention to
-                planning, coordination, workmanship and the requirements
-                of the people who will ultimately use the space.
-            </p>
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Discuss Your Project
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#portfolio" class="btn btn-secondary">
+                    View Our Projects
+                    <i class="fas fa-building"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-            <div class="about-list">
+    <!-- =========================
+         QUICK FACTS
+    ========================== -->
 
-                <div class="about-list-item">
+    <div class="quick-facts">
 
-                    <div class="about-list-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
+        <div class="quick-facts-inner">
 
-                    <div>
-                        <strong>Project Planning</strong>
+            <div class="fact">
 
-                        <span>
-                            Structured planning before execution.
-                        </span>
-                    </div>
-
+                <div class="fact-icon">
+                    <i class="fas fa-calendar-check"></i>
                 </div>
 
-
-                <div class="about-list-item">
-
-                    <div class="about-list-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-
-                    <div>
-                        <strong>Site Coordination</strong>
-
-                        <span>
-                            Clear coordination throughout the project.
-                        </span>
-                    </div>
-
-                </div>
-
-
-                <div class="about-list-item">
-
-                    <div class="about-list-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-
-                    <div>
-                        <strong>Quality Focus</strong>
-
-                        <span>
-                            Attention to materials and workmanship.
-                        </span>
-                    </div>
-
-                </div>
-
-
-                <div class="about-list-item">
-
-                    <div class="about-list-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-
-                    <div>
-                        <strong>Client Communication</strong>
-
-                        <span>
-                            Clear communication from start to finish.
-                        </span>
-                    </div>
-
+                <div>
+                    <strong>Since 2018</strong>
+                    <span>Serving clients for years</span>
                 </div>
 
             </div>
 
 
-            <div class="chairman">
+            <div class="fact">
 
-                <div class="chairman-line"></div>
+                <div class="fact-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
 
                 <div>
+                    <strong>15+ Projects</strong>
+                    <span>Residential & commercial work</span>
+                </div>
 
-                    <strong>
-                        Mr. Yagya Prasad Neupane
-                    </strong>
+            </div>
 
-                    <span>
-                        Chairman, Sarathi Construction Pvt. Ltd.
-                    </span>
 
+            <div class="fact">
+
+                <div class="fact-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+
+                <div>
+                    <strong>One Project at a Time</strong>
+                    <span>Focused on quality and delivery</span>
                 </div>
 
             </div>
@@ -2413,297 +1453,270 @@
 
     </div>
 
-</section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-image-wrapper">
+
+                    <img
+                        src="img/about.jpg"
+                        alt="Sarathi Construction team and project"
+                        class="about-image"
+                    >
+
+                </div>
 
 
+                <div class="about-content">
 
-<!-- =========================================================
-     SERVICES
-========================================================= -->
+                    <div class="section-header">
 
-<section class="section services" id="services">
+                        <span class="section-label">
+                            About Sarathi
+                        </span>
 
-    <div class="container">
+                        <h2 class="section-title">
+                            A Construction Company Built On
+                            <span>Experience</span>
+                        </h2>
+
+                    </div>
 
 
-        <div class="services-header">
+                    <h3>
+                        Sarathi Construction Pvt. Ltd.
+                    </h3>
 
-            <div>
+
+                    <p>
+                        Established in 2018, Sarathi Construction Pvt. Ltd.
+                        is a Kathmandu-based construction company working
+                        across residential, commercial and infrastructure
+                        projects.
+                    </p>
+
+                    <p>
+                        Over the years, we have completed more than 15
+                        projects, each bringing its own requirements,
+                        challenges and working environment. That experience
+                        has taught us the importance of planning properly,
+                        coordinating closely and paying attention to the
+                        details that matter on site.
+                    </p>
+
+                    <p>
+                        We work with clients from the early planning stage
+                        through construction and completion, keeping
+                        communication practical and straightforward along
+                        the way.
+                    </p>
+
+
+                    <div class="about-features">
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Practical Planning</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Experienced Team</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Workmanship</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clear Coordination</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Attention to Detail</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Responsible Delivery</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chairman-info">
+
+                        <strong>
+                            Mr. Yagya Prasad Neupane
+                        </strong>
+
+                        <br>
+
+                        <span>
+                            Chairman, Sarathi Construction Pvt. Ltd.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section id="services" class="services">
+
+        <div class="container">
+
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
 
                 <span class="section-label">
                     What We Do
                 </span>
 
                 <h2 class="section-title">
-                    Construction services
-                    built around your requirements.
+                    Construction Services That
+                    <span>Make Sense</span>
                 </h2>
 
-            </div>
-
-            <p class="section-description">
-                From early planning to execution, we coordinate the
-                key stages of a project with a focus on practical
-                decision-making and dependable delivery.
-            </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-
-            <!-- SERVICE 01 -->
-
-            <article class="service-card">
-
-                <div class="service-image">
-
-                    <img
-                        src="img/service-1.jpg"
-                        alt="Construction management">
-
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Construction Management
-                    </h3>
-
-                    <p>
-                        Coordinating construction activities,
-                        contractors, quality requirements and
-                        project schedules to keep execution
-                        organized and accountable.
-                    </p>
-
-                    <a href="#contact" class="service-link">
-
-                        Discuss a Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- SERVICE 02 -->
-
-            <article class="service-card">
-
-                <div class="service-image">
-
-                    <img
-                        src="img/service-5.jpg"
-                        alt="Planning and consulting">
-
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Planning & Consulting
-                    </h3>
-
-                    <p>
-                        Supporting project planning through
-                        feasibility assessment, cost considerations,
-                        resource planning and execution strategy.
-                    </p>
-
-                    <a href="#contact" class="service-link">
-
-                        Discuss a Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- SERVICE 03 -->
-
-            <article class="service-card">
-
-                <div class="service-image">
-
-                    <img
-                        src="img/service-3.jpg"
-                        alt="Architecture and design">
-
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Architecture & Design
-                    </h3>
-
-                    <p>
-                        Developing practical and visually considered
-                        design solutions that balance function,
-                        durability and the character of each project.
-                    </p>
-
-                    <a href="#contact" class="service-link">
-
-                        Discuss a Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     OUR APPROACH
-========================================================= -->
-
-<section class="section approach" id="approach">
-
-    <div class="container approach-grid">
-
-
-        <div>
-
-            <span class="section-label">
-                Our Approach
-            </span>
-
-            <h2 class="section-title">
-                Good construction
-                starts before the
-                first brick.
-            </h2>
-
-            <p class="section-description">
-                We believe strong project outcomes come from
-                understanding the requirement early, planning
-                carefully and maintaining communication throughout
-                execution.
-            </p>
-
-        </div>
-
-
-        <div class="approach-steps">
-
-
-            <div class="approach-step">
-
-                <div class="step-number">
-                    01
-                </div>
-
-                <div>
-
-                    <h3>
-                        Understand
-                    </h3>
-
-                    <p>
-                        We begin by understanding the project,
-                        site requirements, expectations and
-                        practical constraints.
-                    </p>
-
-                </div>
+                <p
+                    class="section-description"
+                    style="margin: 0 auto;"
+                >
+                    From planning and design to construction management,
+                    we focus on practical solutions that suit the project,
+                    the site and the client's requirements.
+                </p>
 
             </div>
 
 
-            <div class="approach-step">
-
-                <div class="step-number">
-                    02
-                </div>
-
-                <div>
-
-                    <h3>
-                        Plan
-                    </h3>
-
-                    <p>
-                        We establish a clear approach to scope,
-                        resources, timelines and project
-                        coordination.
-                    </p>
-
-                </div>
-
-            </div>
+            <div class="services-grid">
 
 
-            <div class="approach-step">
+                <!-- SERVICE 1 -->
 
-                <div class="step-number">
-                    03
-                </div>
+                <div class="service-card">
 
-                <div>
+                    <div class="service-image">
 
-                    <h3>
-                        Execute
-                    </h3>
+                        <img
+                            src="img/service-1.jpg"
+                            alt="Construction management services"
+                        >
 
-                    <p>
-                        Construction is coordinated with
-                        attention to workmanship, site activity
-                        and agreed project requirements.
-                    </p>
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Construction Management
+                        </h4>
+
+                        <p>
+                            We coordinate the different stages of
+                            construction, from site activities and
+                            contractors to quality checks and project
+                            progress. The goal is simple: keep the work
+                            organized and moving in the right direction.
+                        </p>
+
+                    </div>
 
                 </div>
 
-            </div>
 
+                <!-- SERVICE 2 -->
 
-            <div class="approach-step">
+                <div class="service-card">
 
-                <div class="step-number">
-                    04
+                    <div class="service-image">
+
+                        <img
+                            src="img/service-5.jpg"
+                            alt="Construction planning and consulting"
+                        >
+
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Planning & Consulting
+                        </h4>
+
+                        <p>
+                            Good construction starts with a good plan.
+                            We help with project planning, feasibility,
+                            cost considerations and resource coordination
+                            before work begins on site.
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div>
 
-                    <h3>
-                        Deliver
-                    </h3>
+                <!-- SERVICE 3 -->
 
-                    <p>
-                        We work toward completing the project
-                        responsibly, with attention to quality,
-                        communication and the final result.
-                    </p>
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="img/service-3.jpg"
+                            alt="Architecture and building design"
+                        >
+
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Architecture & Design
+                        </h4>
+
+                        <p>
+                            We work toward designs that balance appearance,
+                            functionality and practical construction
+                            requirements, helping clients make better
+                            decisions before the work begins.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -2711,667 +1724,593 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- =========================
+         PROJECTS
+    ========================== -->
 
-<!-- =========================================================
-     PROJECTS
-========================================================= -->
+    <section id="portfolio">
 
-<section class="section projects" id="projects">
+        <div class="container">
 
-    <div class="container">
-
-
-        <div class="projects-header">
-
-            <div>
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
 
                 <span class="section-label">
-                    Selected Projects
+                    Selected Work
                 </span>
 
                 <h2 class="section-title">
-                    Work that speaks
-                    for itself.
+                    Projects We've
+                    <span>Worked On</span>
                 </h2>
+
+                <p
+                    class="section-description"
+                    style="margin: 0 auto;"
+                >
+                    A selection of residential, commercial and
+                    institutional projects completed by our team.
+                </p>
 
             </div>
 
 
-            <div class="filter-buttons">
+            <div class="portfolio-filter">
 
                 <button
                     class="filter-btn active"
-                    data-filter="all">
-
-                    All
-
+                    data-filter="all"
+                >
+                    All Projects
                 </button>
 
                 <button
                     class="filter-btn"
-                    data-filter="commercial">
-
+                    data-filter="commercial"
+                >
                     Commercial
-
                 </button>
 
                 <button
                     class="filter-btn"
-                    data-filter="residential">
-
+                    data-filter="residential"
+                >
                     Residential
-
                 </button>
+
+            </div>
+
+
+            <div class="portfolio-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-1.jpg"
+                        alt="Muktinath Bikas Bank project in Lazimpat"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Muktinath Bikas Bank
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lazimpat, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-2.jpg"
+                        alt="Residential construction project in Sanepa"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sanepa, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-3.jpg"
+                        alt="Omoda Jaecoo Nepal project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Omoda Jaecoo Nepal
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Uttardhoka, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-4.jpg"
+                        alt="Residential construction project in Tokha"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tokha-7, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-5.jpg"
+                        alt="Office of Auditor General project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Office of Auditor General
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Anamnagar, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 6 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-6.jpg"
+                        alt="Residential construction project in Tokha"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tokha-7, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 7 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-7.jpg"
+                        alt="Chandragiri Municipality project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Chandragiri Municipality
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Balambu, Chandragiri</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
         </div>
 
+    </section>
 
-        <div class="portfolio-grid">
 
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-            <!-- PROJECT 01 -->
+    <section id="contact">
 
-            <article
-                class="portfolio-item"
-                data-category="commercial">
+        <div class="container">
 
-                <img
-                    src="img/portfolio-1.jpg"
-                    alt="Muktinath Bikas Bank project"
-                    class="portfolio-image">
+            <div class="contact-grid">
 
-                <div class="portfolio-overlay">
 
-                    <span class="portfolio-category">
-                        Commercial
-                    </span>
+                <div class="contact-info">
 
-                    <h3 class="portfolio-title">
-                        Muktinath Bikas Bank
-                    </h3>
+                    <div class="section-header">
 
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Lazimpat, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 02 -->
-
-            <article
-                class="portfolio-item"
-                data-category="residential">
-
-                <img
-                    src="img/portfolio-2.jpg"
-                    alt="Residential construction project in Sanepa"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Residential
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Residential Property
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Sanepa, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 03 -->
-
-            <article
-                class="portfolio-item"
-                data-category="commercial">
-
-                <img
-                    src="img/portfolio-3.jpg"
-                    alt="Omoda Jaecoo Nepal project"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Commercial
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Omoda Jaecoo Nepal
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Uttardhoka, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 04 -->
-
-            <article
-                class="portfolio-item"
-                data-category="residential">
-
-                <img
-                    src="img/portfolio-4.jpg"
-                    alt="Residential construction project in Tokha"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Residential
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Residential Property
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Tokha-7, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 05 -->
-
-            <article
-                class="portfolio-item"
-                data-category="commercial">
-
-                <img
-                    src="img/portfolio-5.jpg"
-                    alt="Office of Auditor General project"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Institutional
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Office of Auditor General
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Anamnagar, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 06 -->
-
-            <article
-                class="portfolio-item"
-                data-category="residential">
-
-                <img
-                    src="img/portfolio-6.jpg"
-                    alt="Residential construction project in Tokha"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Residential
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Residential Property
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Tokha-7, Kathmandu
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 07 -->
-
-            <article
-                class="portfolio-item"
-                data-category="commercial">
-
-                <img
-                    src="img/portfolio-7.jpg"
-                    alt="Chandragiri Municipality project"
-                    class="portfolio-image">
-
-                <div class="portfolio-overlay">
-
-                    <span class="portfolio-category">
-                        Institutional
-                    </span>
-
-                    <h3 class="portfolio-title">
-                        Chandragiri Municipality
-                    </h3>
-
-                    <div class="portfolio-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Balambu, Chandragiri
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CTA
-========================================================= -->
-
-<section class="cta">
-
-    <div class="container cta-inner">
-
-        <div>
-
-            <h2>
-                Have a project in mind?
-            </h2>
-
-            <p>
-                Tell us what you're planning. We can discuss the
-                requirements, scope and next steps for your project.
-            </p>
-
-        </div>
-
-
-        <div class="cta-actions">
-
-            <a
-                href="tel:+9779851055392"
-                class="btn btn-primary">
-
-                <i class="fa-solid fa-phone"></i>
-
-                Call Us
-
-            </a>
-
-            <a
-                href="#contact"
-                class="btn btn-outline">
-
-                Send an Inquiry
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
-<section class="section contact" id="contact">
-
-    <div class="container contact-grid">
-
-
-        <div class="contact-info">
-
-            <span class="section-label">
-                Contact
-            </span>
-
-            <h2 class="section-title">
-                Let's discuss
-                your next project.
-            </h2>
-
-            <p>
-                Whether you're planning a residential building,
-                commercial space or institutional project, get
-                in touch with our team to discuss your requirements.
-            </p>
-
-
-            <div class="contact-details">
-
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Office
-                        </h4>
-
-                        <span>
-                            Tokha-7, Kathmandu, Nepal
+                        <span class="section-label">
+                            Start A Conversation
                         </span>
 
+                        <h2 class="section-title">
+                            Have A Project In
+                            <span>Mind?</span>
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Whether you are planning a new building,
+                        renovating an existing space or simply want
+                        to understand what your project may involve,
+                        get in touch with us. We are happy to discuss
+                        the requirements and understand what you need.
+                    </p>
+
+
+                    <div class="contact-details">
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Our Office
+                                </h4>
+
+                                <p>
+                                    Tokha-7, Kathmandu, Nepal
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Email
+                                </h4>
+
+                                <a href="mailto:sarathiyb@gmail.com">
+                                    sarathiyb@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Phone
+                                </h4>
+
+                                <a href="tel:+9779851055392">
+                                    +977 9851055392
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
                     </div>
 
                 </div>
 
 
-                <div class="contact-item">
+                <div class="contact-form">
 
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
+                    <div class="contact-form-header">
 
-                    <div>
+                        <h3>
+                            Tell Us About Your Project
+                        </h3>
 
-                        <h4>
-                            Phone
-                        </h4>
-
-                        <a href="tel:+9779851055392">
-                            +977 9851055392
-                        </a>
+                        <p>
+                            Leave your details and we'll get back to you.
+                        </p>
 
                     </div>
+
+
+                    <!--
+                        IMPORTANT:
+                        Replace the form action with your hosting
+                        form-processing endpoint before going live.
+                    -->
+
+                    <form
+                        id="contactForm"
+                        action="mailto:sarathiyb@gmail.com"
+                        method="post"
+                        enctype="text/plain"
+                    >
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="Name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="Email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="Phone"
+                                    placeholder="+977"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="projectType">
+                                    Project Type
+                                </label>
+
+                                <select
+                                    id="projectType"
+                                    name="Project Type"
+                                >
+
+                                    <option value="">
+                                        Select project type
+                                    </option>
+
+                                    <option value="Residential">
+                                        Residential
+                                    </option>
+
+                                    <option value="Commercial">
+                                        Commercial
+                                    </option>
+
+                                    <option value="Renovation">
+                                        Renovation
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell us about your project *
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="Message"
+                                placeholder="Briefly describe your project, location and what you need help with..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                            style="width: 100%;"
+                        >
+                            Send Enquiry
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+
+                        <p class="form-note">
+                            We will use the information you provide only
+                            to respond to your enquiry.
+                        </p>
+
+                    </form>
 
                 </div>
-
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Email
-                        </h4>
-
-                        <a href="mailto:sarathiyb@gmail.com">
-                            sarathiyb@gmail.com
-                        </a>
-
-                    </div>
-
-                </div>
-
 
             </div>
 
         </div>
 
+    </section>
 
-        <div class="contact-form">
 
-            <h3 class="form-heading">
-                Tell us about your project
-            </h3>
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
+    <footer>
 
-            <!--
-                IMPORTANT:
-                This form currently uses JavaScript validation only.
+        <div class="footer-content">
 
-                To actually receive inquiries, connect the form
-                to a PHP backend or a form service.
-            -->
 
-            <form id="contactForm">
+            <div class="footer-about">
 
+                <h2 class="footer-logo">
 
-                <div class="form-row">
+                    <i class="fas fa-building"></i>
 
-                    <div class="form-group">
+                    SARATHI CONSTRUCTION
 
-                        <label for="name">
-                            Name *
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
-                            required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Phone *
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+977"
-                            required>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="projectType">
-                            Project Type
-                        </label>
-
-                        <select
-                            id="projectType"
-                            name="projectType">
-
-                            <option value="">
-                                Select project type
-                            </option>
-
-                            <option value="residential">
-                                Residential
-                            </option>
-
-                            <option value="commercial">
-                                Commercial
-                            </option>
-
-                            <option value="institutional">
-                                Institutional
-                            </option>
-
-                            <option value="other">
-                                Other
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Project Details *
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tell us briefly about your project..."
-                        required></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary form-submit">
-
-                    Send Inquiry
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer>
-
-    <div class="container">
-
-
-        <div class="footer-grid">
-
-
-            <div class="footer-brand">
-
-                <div class="footer-logo">
-
-                    <div class="footer-logo-mark">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-
-                    <strong>
-                        SARATHI CONSTRUCTION
-                    </strong>
-
-                </div>
-
+                </h2>
 
                 <p>
-                    Sarathi Construction Pvt. Ltd. provides
-                    construction, planning and project management
-                    services with a practical focus on quality,
-                    coordination and dependable execution.
+                    Established in 2018, Sarathi Construction Pvt. Ltd.
+                    works on residential, commercial and infrastructure
+                    projects with a practical approach to planning,
+                    construction and project coordination.
                 </p>
 
 
                 <div class="social-links">
 
-                    <!-- Replace # with actual social URLs -->
+                    <!-- Replace # with actual social media URLs -->
 
-                    <a href="#"
-                       aria-label="Facebook">
-
-                        <i class="fa-brands fa-facebook-f"></i>
-
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
 
-                    <a href="#"
-                       aria-label="Instagram">
-
-                        <i class="fa-brands fa-instagram"></i>
-
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
 
-                    <a href="#"
-                       aria-label="LinkedIn">
-
-                        <i class="fa-brands fa-linkedin-in"></i>
-
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
 
                 </div>
@@ -3381,40 +2320,30 @@
 
             <div>
 
-                <h4 class="footer-heading">
-                    Company
-                </h4>
+                <h3 class="footer-heading">
+                    Quick Links
+                </h3>
 
                 <ul class="footer-links">
 
                     <li>
-                        <a href="#about">
-                            About Us
-                        </a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li>
-                        <a href="#services">
-                            Services
-                        </a>
+                        <a href="#about">About Us</a>
                     </li>
 
                     <li>
-                        <a href="#projects">
-                            Projects
-                        </a>
+                        <a href="#services">Services</a>
                     </li>
 
                     <li>
-                        <a href="#approach">
-                            Our Approach
-                        </a>
+                        <a href="#portfolio">Projects</a>
                     </li>
 
                     <li>
-                        <a href="#contact">
-                            Contact
-                        </a>
+                        <a href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -3422,42 +2351,36 @@
             </div>
 
 
-            <div>
+            <div class="footer-contact">
 
-                <h4 class="footer-heading">
+                <h3 class="footer-heading">
                     Contact
-                </h4>
+                </h3>
 
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Tokha-7, Kathmandu, Nepal
+                </p>
 
-                <div class="footer-contact">
-
-                    <span>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Tokha-7, Kathmandu, Nepal
-
-                    </span>
-
-
-                    <a href="tel:+9779851055392">
-
-                        <i class="fa-solid fa-phone"></i>
-
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a
+                        href="tel:+9779851055392"
+                        style="color: inherit; text-decoration: none;"
+                    >
                         +977 9851055392
-
                     </a>
+                </p>
 
-
-                    <a href="mailto:sarathiyb@gmail.com">
-
-                        <i class="fa-solid fa-envelope"></i>
-
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a
+                        href="mailto:sarathiyb@gmail.com"
+                        style="color: inherit; text-decoration: none;"
+                    >
                         sarathiyb@gmail.com
-
                     </a>
-
-                </div>
+                </p>
 
             </div>
 
@@ -3467,463 +2390,323 @@
 
         <div class="footer-bottom">
 
-            <span>
-                © 2026 Sarathi Construction Pvt. Ltd.
-                All rights reserved.
-            </span>
-
-            <span>
-                Kathmandu, Nepal
-            </span>
+            <p>
+                &copy; 2026 Sarathi Construction Pvt. Ltd.
+                All Rights Reserved.
+            </p>
 
         </div>
 
-    </div>
-
-</footer>
+    </footer>
 
 
+    <!-- =========================
+         SCROLL TO TOP
+    ========================== -->
 
-<!-- =========================================================
-     WHATSAPP BUTTON
-========================================================= -->
-
-<a
-    href="https://wa.me/9779851055392"
-    class="whatsapp"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat with Sarathi Construction on WhatsApp">
-
-    <i class="fa-brands fa-whatsapp"></i>
-
-</a>
+    <button
+        class="scroll-top"
+        id="scrollTop"
+        aria-label="Scroll to top"
+    >
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-<!-- =========================================================
-     SCROLL TO TOP
-========================================================= -->
+    <script>
 
-<button
-    class="scroll-top"
-    id="scrollTop"
-    aria-label="Scroll to top">
+        /* =========================
+           MOBILE MENU
+        ========================== */
 
-    <i class="fa-solid fa-arrow-up"></i>
+        const mobileToggle =
+            document.getElementById('mobileToggle');
 
-</button>
-
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================= */
-
-    const mobileToggle =
-        document.getElementById("mobileToggle");
-
-    const navMenu =
-        document.getElementById("navMenu");
+        const navMenu =
+            document.getElementById('navMenu');
 
 
-    mobileToggle.addEventListener("click", function () {
+        mobileToggle.addEventListener('click', () => {
 
-        const isOpen =
-            navMenu.classList.toggle("active");
+            const isActive =
+                navMenu.classList.toggle('active');
 
-        mobileToggle.classList.toggle("active");
+            mobileToggle.classList.toggle('active');
 
-        mobileToggle.setAttribute(
-            "aria-expanded",
-            isOpen
-        );
-
-    });
-
-
-    /* Close mobile menu after clicking a link */
-
-    document
-        .querySelectorAll(".nav-menu a")
-        .forEach(function (link) {
-
-            link.addEventListener("click", function () {
-
-                navMenu.classList.remove("active");
-
-                mobileToggle.classList.remove("active");
-
-                mobileToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-            });
+            mobileToggle.setAttribute(
+                'aria-expanded',
+                isActive
+            );
 
         });
 
 
+        document
+            .querySelectorAll('.nav-menu a')
+            .forEach(link => {
 
-    /* =========================================================
-       NAVBAR SCROLL EFFECT
-    ========================================================= */
+                link.addEventListener('click', () => {
 
-    const navbar =
-        document.querySelector(".navbar");
+                    navMenu.classList.remove('active');
 
+                    mobileToggle.classList.remove('active');
 
-    function updateNavbar() {
+                    mobileToggle.setAttribute(
+                        'aria-expanded',
+                        'false'
+                    );
 
-        if (window.scrollY > 30) {
+                });
 
-            navbar.classList.add("scrolled");
-
-        } else {
-
-            navbar.classList.remove("scrolled");
-
-        }
-
-    }
+            });
 
 
-    window.addEventListener(
-        "scroll",
-        updateNavbar,
-        { passive: true }
-    );
+        /* =========================
+           NAVBAR SCROLL
+        ========================== */
+
+        const navbar =
+            document.querySelector('.navbar');
 
 
-    updateNavbar();
+        window.addEventListener('scroll', () => {
 
+            if (window.scrollY > 50) {
 
+                navbar.classList.add('scrolled');
 
-    /* =========================================================
-       ACTIVE NAVIGATION
-    ========================================================= */
+            } else {
 
-    const sections =
-        document.querySelectorAll("section[id]");
-
-    const navLinks =
-        document.querySelectorAll(".nav-menu a");
-
-
-    function updateActiveNav() {
-
-        let current = "home";
-
-        sections.forEach(function (section) {
-
-            const sectionTop =
-                section.offsetTop - 160;
-
-            if (window.scrollY >= sectionTop) {
-
-                current =
-                    section.getAttribute("id");
+                navbar.classList.remove('scrolled');
 
             }
 
         });
 
 
-        navLinks.forEach(function (link) {
+        /* =========================
+           ACTIVE NAVIGATION
+        ========================== */
 
-            link.classList.remove("active");
+        const sections =
+            document.querySelectorAll('section[id]');
 
-            const href =
-                link.getAttribute("href");
-
-            if (href === "#" + current) {
-
-                link.classList.add("active");
-
-            }
-
-        });
-
-    }
+        const navLinks =
+            document.querySelectorAll('.nav-menu a');
 
 
-    window.addEventListener(
-        "scroll",
-        updateActiveNav,
-        { passive: true }
-    );
+        function updateActiveNavigation() {
 
+            let current = 'home';
 
+            sections.forEach(section => {
 
-    /* =========================================================
-       HERO SLIDER
-    ========================================================= */
+                const sectionTop =
+                    section.offsetTop - 150;
 
-    const slides =
-        document.querySelectorAll(".hero-slide");
+                if (window.scrollY >= sectionTop) {
 
-    let currentSlide = 0;
-
-
-    function nextSlide() {
-
-        if (slides.length <= 1) {
-            return;
-        }
-
-        slides[currentSlide]
-            .classList.remove("active");
-
-        currentSlide =
-            (currentSlide + 1) % slides.length;
-
-        slides[currentSlide]
-            .classList.add("active");
-
-    }
-
-
-    setInterval(nextSlide, 6000);
-
-
-
-    /* =========================================================
-       PROJECT FILTER
-    ========================================================= */
-
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
-
-    const portfolioItems =
-        document.querySelectorAll(".portfolio-item");
-
-
-    filterButtons.forEach(function (button) {
-
-        button.addEventListener("click", function () {
-
-            filterButtons.forEach(function (btn) {
-
-                btn.classList.remove("active");
-
-            });
-
-            button.classList.add("active");
-
-
-            const filter =
-                button.getAttribute("data-filter");
-
-
-            portfolioItems.forEach(function (item) {
-
-                const category =
-                    item.getAttribute("data-category");
-
-
-                if (
-                    filter === "all" ||
-                    category === filter
-                ) {
-
-                    item.classList.remove("hidden");
-
-                } else {
-
-                    item.classList.add("hidden");
+                    current =
+                        section.getAttribute('id');
 
                 }
 
             });
 
-        });
 
-    });
+            navLinks.forEach(link => {
 
+                link.classList.remove('active');
 
+                if (
+                    link.getAttribute('href') ===
+                    '#' + current
+                ) {
 
-    /* =========================================================
-       SCROLL TO TOP
-    ========================================================= */
+                    link.classList.add('active');
 
-    const scrollTop =
-        document.getElementById("scrollTop");
+                }
 
-
-    function updateScrollTop() {
-
-        if (window.scrollY > 500) {
-
-            scrollTop.classList.add("visible");
-
-        } else {
-
-            scrollTop.classList.remove("visible");
-
-        }
-
-    }
-
-
-    window.addEventListener(
-        "scroll",
-        updateScrollTop,
-        { passive: true }
-    );
-
-
-    scrollTop.addEventListener(
-        "click",
-        function () {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
             });
 
         }
-    );
 
 
-
-    /* =========================================================
-       CONTACT FORM
-    ========================================================= */
-
-    const contactForm =
-        document.getElementById("contactForm");
+        window.addEventListener(
+            'scroll',
+            updateActiveNavigation
+        );
 
 
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
+        /* =========================
+           HERO SLIDER
+        ========================== */
 
-            event.preventDefault();
+        const slides =
+            document.querySelectorAll('.hero-slide');
 
-
-            const name =
-                document.getElementById("name").value.trim();
-
-            const phone =
-                document.getElementById("phone").value.trim();
-
-            const message =
-                document.getElementById("message").value.trim();
+        let currentSlide = 0;
 
 
-            if (!name || !phone || !message) {
+        function nextSlide() {
 
-                alert(
-                    "Please complete the required fields."
-                );
-
+            if (slides.length <= 1) {
                 return;
-
             }
 
+            slides[currentSlide]
+                .classList
+                .remove('active');
 
-            /*
-                IMPORTANT:
+            currentSlide =
+                (currentSlide + 1) % slides.length;
 
-                This currently does NOT send an email.
-
-                Connect this form to your PHP backend
-                before putting the website into production.
-            */
-
-            alert(
-                "Thank you, " +
-                name +
-                ". Your inquiry has been received."
-            );
-
-
-            contactForm.reset();
+            slides[currentSlide]
+                .classList
+                .add('active');
 
         }
-    );
 
 
+        setInterval(nextSlide, 5000);
 
-    /* =========================================================
-       SMOOTH ANCHOR SCROLL
-    ========================================================= */
 
-    document
-        .querySelectorAll('a[href^="#"]')
-        .forEach(function (anchor) {
+        /* =========================
+           PROJECT FILTER
+        ========================== */
 
-            anchor.addEventListener(
-                "click",
-                function (event) {
+        const filterBtns =
+            document.querySelectorAll('.filter-btn');
 
-                    const targetId =
-                        this.getAttribute("href");
+        const portfolioItems =
+            document.querySelectorAll('.portfolio-item');
+
+
+        filterBtns.forEach(btn => {
+
+            btn.addEventListener('click', () => {
+
+                filterBtns.forEach(button => {
+
+                    button.classList.remove('active');
+
+                });
+
+                btn.classList.add('active');
+
+
+                const filter =
+                    btn.getAttribute('data-filter');
+
+
+                portfolioItems.forEach(item => {
+
+                    const category =
+                        item.getAttribute('data-category');
 
 
                     if (
-                        targetId === "#" ||
-                        targetId.length < 2
+                        filter === 'all' ||
+                        category === filter
                     ) {
-                        return;
+
+                        item.style.display = '';
+
+                    } else {
+
+                        item.style.display = 'none';
+
                     }
 
+                });
 
-                    const target =
-                        document.querySelector(targetId);
-
-
-                    if (!target) {
-                        return;
-                    }
-
-
-                    event.preventDefault();
-
-
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-
-                }
-            );
+            });
 
         });
 
 
+        /* =========================
+           SCROLL TO TOP
+        ========================== */
 
-    /* =========================================================
-       YEAR
-    ========================================================= */
+        const scrollTop =
+            document.getElementById('scrollTop');
 
-    /*
-       Automatically keeps the copyright year current.
-    */
 
-    const year =
-        new Date().getFullYear();
+        window.addEventListener('scroll', () => {
 
-    const footerYear =
-        document.querySelector(".footer-bottom span");
+            if (window.scrollY > 300) {
 
-    if (footerYear) {
+                scrollTop.classList.add('visible');
 
-        footerYear.innerHTML =
-            "© " +
-            year +
-            " Sarathi Construction Pvt. Ltd. All rights reserved.";
+            } else {
 
-    }
+                scrollTop.classList.remove('visible');
 
-</script>
+            }
 
+        });
+
+
+        scrollTop.addEventListener('click', () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: 'smooth'
+
+            });
+
+        });
+
+
+        /* =========================
+           CONTACT FORM
+        ========================== */
+
+        const contactForm =
+            document.getElementById('contactForm');
+
+
+        contactForm.addEventListener('submit', function () {
+
+            /*
+             * The form currently uses mailto.
+             * For a professional production website,
+             * connect this to a PHP mail handler or
+             * your hosting provider's form-processing system.
+             */
+
+        });
+
+
+        /* =========================
+           ESC KEY
+        ========================== */
+
+        document.addEventListener('keydown', event => {
+
+            if (event.key === 'Escape') {
+
+                navMenu.classList.remove('active');
+
+                mobileToggle.classList.remove('active');
+
+                mobileToggle.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
