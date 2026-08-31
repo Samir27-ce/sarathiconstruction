@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Sarathi Construction Pvt. Ltd. - A Kathmandu-based construction company established in 2018, delivering residential, commercial and infrastructure projects across Nepal.">
+    <meta name="description" content="Sarathi Construction Pvt. Ltd., based in Tokha, Kathmandu — home construction, commercial buildings and government contract work since 2018. Talk to us about your next project.">
 
-    <meta name="keywords" content="Sarathi Construction, construction company Nepal, construction Kathmandu, building contractor Nepal, residential construction, commercial construction">
+    <meta name="keywords" content="Sarathi Construction, Tokha construction company, house construction Kathmandu, building contractor Nepal, commercial construction Kathmandu, RCC building contractor Nepal">
 
     <meta name="author" content="Sarathi Construction Pvt. Ltd.">
 
-    <title>Sarathi Construction Pvt. Ltd. | Building With Purpose</title>
+    <title>Sarathi Construction Pvt. Ltd. | Tokha, Kathmandu</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -592,6 +591,222 @@
         }
 
         /* =========================
+           LEADER MESSAGE
+        ========================= */
+
+        .leader {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .leader-grid {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .leader-portrait-wrapper {
+            position: relative;
+            height: 400px;
+        }
+
+        .leader-portrait-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--primary);
+            z-index: -1;
+            clip-path: polygon(
+                24px 0,
+                100% 0,
+                100% calc(100% - 24px),
+                calc(100% - 24px) 100%,
+                0 100%,
+                0 24px
+            );
+        }
+
+        .leader-portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(
+                24px 0,
+                100% 0,
+                100% calc(100% - 24px),
+                calc(100% - 24px) 100%,
+                0 100%,
+                0 24px
+            );
+        }
+
+        .leader-quote-mark {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 6rem;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: -1.5rem;
+        }
+
+        .leader-content p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.88);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        .leader-signature strong {
+            display: block;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+        }
+
+        .leader-signature span {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           WHY SARATHI / VALUES
+        ========================= */
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .value-card {
+            padding: 2.5rem 2rem;
+            background: white;
+            border-top: 3px solid var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gray-100);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+        }
+
+        .value-card h4 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .value-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           CLIENT FEEDBACK (placeholder)
+        ========================= */
+
+        .feedback {
+            background: var(--gray-100);
+        }
+
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feedback-card {
+            background: white;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px dashed var(--gray-200);
+        }
+
+        .feedback-card .fa-quote-left {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feedback-card p {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .feedback-name strong {
+            display: block;
+            color: var(--secondary);
+        }
+
+        .feedback-name span {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .feedback-note {
+            text-align: center;
+            margin-top: 2.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           CTA BANNER
+        ========================= */
+
+        .cta-banner {
+            background: var(--gradient);
+            padding: 4.5rem 2rem;
+        }
+
+        .cta-banner .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .cta-banner h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: white;
+            max-width: 600px;
+        }
+
+        .cta-banner .btn-secondary {
+            border-color: white;
+            color: white;
+        }
+
+        .cta-banner .btn-secondary:hover {
+            background: white;
+            color: var(--primary-dark);
+        }
+
+        /* =========================
            SERVICES
         ========================= */
 
@@ -638,18 +853,19 @@
 
         .service-icon {
             position: absolute;
-            bottom: -30px;
+            top: 280px;
             left: 50%;
-            transform: translateX(-50%);
-            width: 70px;
-            height: 70px;
+            transform: translate(-50%, -50%);
+            width: 74px;
+            height: 74px;
             background: var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
             color: white;
-            z-index: 2;
+            z-index: 3;
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.35);
             clip-path: polygon(
                 30% 0%,
                 70% 0%,
@@ -664,7 +880,7 @@
         }
 
         .service-card:hover .service-icon {
-            transform: translateX(-50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
         .service-content {
@@ -939,8 +1155,8 @@
             max-width: 1400px;
             margin: 0 auto 2rem;
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 1.3fr 0.8fr 1fr 1fr;
+            gap: 3rem;
         }
 
         .footer-logo {
@@ -1078,13 +1294,24 @@
 
         @media (max-width: 1100px) {
             .about-grid,
-            .contact-grid {
+            .contact-grid,
+            .leader-grid {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
 
+            .leader-portrait-wrapper {
+                height: 320px;
+                max-width: 320px;
+            }
+
             .services-grid,
-            .portfolio-grid {
+            .portfolio-grid,
+            .feedback-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .values-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -1169,8 +1396,15 @@
             }
 
             .services-grid,
-            .portfolio-grid {
+            .portfolio-grid,
+            .values-grid,
+            .feedback-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .cta-banner .container {
+                flex-direction: column;
+                text-align: center;
             }
 
             .form-row {
@@ -1371,14 +1605,15 @@
             </span>
 
             <h1>
-                Building With Purpose. Delivering With Care.
+                A Builder You Can Actually Reach On Site
             </h1>
 
             <p>
-                Sarathi Construction has been working on residential,
-                commercial and infrastructure projects since 2018,
-                bringing together practical planning, skilled workmanship
-                and close attention to every stage of construction.
+                We've been building homes, commercial spaces and public
+                buildings around Kathmandu since 2018 — from a bank branch
+                in Lazimpat to houses in Tokha and Sanepa. No handoffs to
+                strangers halfway through; the same team that quotes your
+                project stays on it until the keys are handed over.
             </p>
 
             <div class="hero-buttons">
@@ -1415,8 +1650,8 @@
                 </div>
 
                 <div>
-                    <strong>Since 2018</strong>
-                    <span>Serving clients for years</span>
+                    <strong>8 Years</strong>
+                    <span>Building around Kathmandu since 2018</span>
                 </div>
 
             </div>
@@ -1429,8 +1664,8 @@
                 </div>
 
                 <div>
-                    <strong>15+ Projects</strong>
-                    <span>Residential & commercial work</span>
+                    <strong>15+ Sites Completed</strong>
+                    <span>Homes, banks, showrooms & government buildings</span>
                 </div>
 
             </div>
@@ -1443,8 +1678,8 @@
                 </div>
 
                 <div>
-                    <strong>One Project at a Time</strong>
-                    <span>Focused on quality and delivery</span>
+                    <strong>No Subcontracting Out</strong>
+                    <span>Our own crew stays on your site, start to finish</span>
                 </div>
 
             </div>
@@ -1497,26 +1732,35 @@
 
 
                     <p>
-                        Established in 2018, Sarathi Construction Pvt. Ltd.
-                        is a Kathmandu-based construction company working
-                        across residential, commercial and infrastructure
-                        projects.
+                        We started Sarathi Construction in 2018 out of
+                        Tokha, and most of our early jobs were private
+                        homes in the neighbourhood — the kind where the
+                        client is checking on the foundation work every
+                        other day. That habit of staying close to the site
+                        never really left us, even as the projects got
+                        bigger.
                     </p>
 
                     <p>
-                        Over the years, we have completed more than 15
-                        projects, each bringing its own requirements,
-                        challenges and working environment. That experience
-                        has taught us the importance of planning properly,
-                        coordinating closely and paying attention to the
-                        details that matter on site.
+                        Since then we've built a branch office for
+                        Muktinath Bikas Bank in Lazimpat, the Omoda Jaecoo
+                        showroom, government buildings including a
+                        Chandragiri municipality structure and work for
+                        the Office of the Auditor General, alongside a
+                        steady run of houses in Tokha and Sanepa. Fifteen-plus
+                        sites in, we've learned that most construction
+                        problems come from poor coordination, not bad
+                        workmanship — so that's where we put the effort.
                     </p>
 
                     <p>
-                        We work with clients from the early planning stage
-                        through construction and completion, keeping
-                        communication practical and straightforward along
-                        the way.
+                        We sit with clients before the first brick goes
+                        down, walk through the site plan, and stay
+                        reachable through every stage after that. If
+                        something on site needs a decision — a design
+                        change, a material substitution, a delay from the
+                        monsoon — you hear about it directly from us, not
+                        through three layers of subcontractors.
                     </p>
 
 
@@ -1524,32 +1768,32 @@
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Practical Planning</span>
+                            <span>Site Visits Before Quoting</span>
                         </div>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Experienced Team</span>
+                            <span>In-House Crew</span>
                         </div>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Quality Workmanship</span>
+                            <span>Bank & Government Work</span>
                         </div>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Clear Coordination</span>
+                            <span>Direct Contact, No Middlemen</span>
                         </div>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Attention to Detail</span>
+                            <span>Honest Timelines</span>
                         </div>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Responsible Delivery</span>
+                            <span>We Show Up After Handover Too</span>
                         </div>
 
                     </div>
@@ -1579,6 +1823,150 @@
 
 
     <!-- =========================
+         LEADER MESSAGE
+    ========================== -->
+
+    <section class="leader">
+
+        <div class="container">
+
+            <div class="leader-grid">
+
+                <div class="leader-portrait-wrapper">
+
+                    <img
+                        src="img/chairman.jpg"
+                        alt="Yagya Prasad Neupane, Chairman of Sarathi Construction"
+                        class="leader-portrait"
+                    >
+
+                </div>
+
+                <div class="leader-content">
+
+                    <span class="leader-quote-mark">"</span>
+
+                    <p>
+                        When we started Sarathi Construction in 2018, the
+                        goal was simple: build things properly and stand
+                        behind them after the keys are handed over. That
+                        hasn't changed as the projects have gotten bigger.
+                        Whether it's a family building their first home or
+                        an institution putting up a branch office, they
+                        deserve a contractor who shows up, tells them the
+                        truth about timelines and costs, and finishes what
+                        was promised. That's what we try to do on every
+                        site, every time.
+                    </p>
+
+                    <div class="leader-signature">
+                        <strong>Yagya Prasad Neupane</strong>
+                        <span>CHAIRMAN, SARATHI CONSTRUCTION PVT. LTD.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY SARATHI
+    ========================== -->
+
+    <section id="why-us">
+
+        <div class="container">
+
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
+
+                <span class="section-label">
+                    Why Sarathi
+                </span>
+
+                <h2 class="section-title">
+                    What You Get Working
+                    <span>With Us</span>
+                </h2>
+
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+
+                    <h4>Direct Access</h4>
+
+                    <p>
+                        You deal with the people running the project, not
+                        a rotating cast of site supervisors.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fas fa-people-carry"></i>
+                    </div>
+
+                    <h4>Our Own Crew</h4>
+
+                    <p>
+                        No subcontracting the work out to a team you've
+                        never met. The same crew stays with your project.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+
+                    <h4>Institutional Experience</h4>
+
+                    <p>
+                        We've delivered work for banks, showrooms and
+                        government offices, alongside private homes.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+
+                    <h4>Honest Timelines</h4>
+
+                    <p>
+                        We tell you what a delay will actually cost in
+                        time, rather than promising a date we know we'll miss.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
          SERVICES
     ========================== -->
 
@@ -1596,17 +1984,18 @@
                 </span>
 
                 <h2 class="section-title">
-                    Construction Services That
-                    <span>Make Sense</span>
+                    What We Actually
+                    <span>Do On Site</span>
                 </h2>
 
                 <p
                     class="section-description"
                     style="margin: 0 auto;"
                 >
-                    From planning and design to construction management,
-                    we focus on practical solutions that suit the project,
-                    the site and the client's requirements.
+                    Some clients come to us with drawings already done and
+                    just need someone to build it right. Others start with
+                    an empty plot and a rough idea. Either way works —
+                    here's where we fit in.
                 </p>
 
             </div>
@@ -1626,10 +2015,10 @@
                             alt="Construction management services"
                         >
 
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
+                    </div>
 
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
                     </div>
 
                     <div class="service-content">
@@ -1639,11 +2028,13 @@
                         </h4>
 
                         <p>
-                            We coordinate the different stages of
-                            construction, from site activities and
-                            contractors to quality checks and project
-                            progress. The goal is simple: keep the work
-                            organized and moving in the right direction.
+                            Someone from our team is on your site daily —
+                            not just for pours or handovers. We schedule
+                            the masons, plumbers and electricians so they
+                            aren't tripping over each other, catch rebar
+                            and finishing issues before they're plastered
+                            over, and give you a straight answer when a
+                            deadline is slipping.
                         </p>
 
                     </div>
@@ -1662,10 +2053,10 @@
                             alt="Construction planning and consulting"
                         >
 
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
+                    </div>
 
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
 
                     <div class="service-content">
@@ -1675,10 +2066,12 @@
                         </h4>
 
                         <p>
-                            Good construction starts with a good plan.
-                            We help with project planning, feasibility,
-                            cost considerations and resource coordination
-                            before work begins on site.
+                            Before we quote anything, we walk the plot with
+                            you, check soil and access conditions, and
+                            work out a realistic budget and timeline — the
+                            kind that accounts for monsoon delays and
+                            municipality approval waits, not the kind that
+                            looks good on paper and falls apart in month two.
                         </p>
 
                     </div>
@@ -1697,10 +2090,10 @@
                             alt="Architecture and building design"
                         >
 
-                        <div class="service-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
+                    </div>
 
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
                     </div>
 
                     <div class="service-content">
@@ -1710,10 +2103,11 @@
                         </h4>
 
                         <p>
-                            We work toward designs that balance appearance,
-                            functionality and practical construction
-                            requirements, helping clients make better
-                            decisions before the work begins.
+                            We work with architects on layout and elevation,
+                            but we're also the ones who'll tell you if a
+                            design detail is going to be a headache to
+                            build or push your budget up — before it's
+                            poured in concrete instead of drawn on paper.
                         </p>
 
                     </div>
@@ -1745,16 +2139,17 @@
                 </span>
 
                 <h2 class="section-title">
-                    Projects We've
-                    <span>Worked On</span>
+                    A Few Sites
+                    <span>We're Proud Of</span>
                 </h2>
 
                 <p
                     class="section-description"
                     style="margin: 0 auto;"
                 >
-                    A selection of residential, commercial and
-                    institutional projects completed by our team.
+                    A mix of family homes, a bank branch, a car showroom
+                    and two government buildings — different clients,
+                    different requirements, same crew.
                 </p>
 
             </div>
@@ -2000,6 +2395,117 @@
 
 
     <!-- =========================
+         CLIENT FEEDBACK
+         (Placeholder — replace with real client quotes
+         and logos once available. Remove the feedback-note
+         line once real testimonials are added.)
+    ========================== -->
+
+    <section class="feedback">
+
+        <div class="container">
+
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
+
+                <span class="section-label">
+                    Client Feedback
+                </span>
+
+                <h2 class="section-title">
+                    What Clients
+                    <span>Say</span>
+                </h2>
+
+            </div>
+
+            <div class="feedback-grid">
+
+                <div class="feedback-card">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p>
+                        Add a short quote here from a client describing
+                        what it was like to work with Sarathi Construction.
+                    </p>
+
+                    <div class="feedback-name">
+                        <strong>Client Name</strong>
+                        <span>Company / Project</span>
+                    </div>
+
+                </div>
+
+                <div class="feedback-card">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p>
+                        Add a short quote here from a client describing
+                        what it was like to work with Sarathi Construction.
+                    </p>
+
+                    <div class="feedback-name">
+                        <strong>Client Name</strong>
+                        <span>Company / Project</span>
+                    </div>
+
+                </div>
+
+                <div class="feedback-card">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p>
+                        Add a short quote here from a client describing
+                        what it was like to work with Sarathi Construction.
+                    </p>
+
+                    <div class="feedback-name">
+                        <strong>Client Name</strong>
+                        <span>Company / Project</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="feedback-note">
+                Placeholder content — replace with real client quotes
+                before publishing.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA BANNER
+    ========================== -->
+
+    <section class="cta-banner">
+
+        <div class="container">
+
+            <h2>
+                Have A Project You Want Built Right?
+            </h2>
+
+            <a href="#contact" class="btn btn-secondary">
+                Talk To Us
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
          CONTACT
     ========================== -->
 
@@ -2027,11 +2533,11 @@
 
 
                     <p>
-                        Whether you are planning a new building,
-                        renovating an existing space or simply want
-                        to understand what your project may involve,
-                        get in touch with us. We are happy to discuss
-                        the requirements and understand what you need.
+                        Building a house, extending one, or putting up a
+                        commercial space — call or write to us and we'll
+                        arrange a site visit. There's no charge for the
+                        first conversation, and no obligation to move
+                        forward after it.
                     </p>
 
 
@@ -2290,10 +2796,9 @@
                 </h2>
 
                 <p>
-                    Established in 2018, Sarathi Construction Pvt. Ltd.
-                    works on residential, commercial and infrastructure
-                    projects with a practical approach to planning,
-                    construction and project coordination.
+                    Building homes, commercial spaces and government
+                    buildings around Kathmandu since 2018 — based in
+                    Tokha, working across the valley.
                 </p>
 
 
@@ -2344,6 +2849,31 @@
 
                     <li>
                         <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="footer-heading">
+                    Services
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#services">Construction Management</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Planning & Consulting</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Architecture & Design</a>
                     </li>
 
                 </ul>
@@ -2710,4 +3240,3 @@
 
 </body>
 </html>
-
