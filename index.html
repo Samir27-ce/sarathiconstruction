@@ -1,1400 +1,2713 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sarathi Construction - Your Trusted Partner in Building Excellence. Professional construction, planning, and architecture services in Kathmandu, Nepal.">
-<title>Sarathi Construction | Building Excellence Since Day One</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Sarathi Construction Pvt. Ltd. - A Kathmandu-based construction company established in 2018, delivering residential, commercial and infrastructure projects across Nepal.">
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="keywords" content="Sarathi Construction, construction company Nepal, construction Kathmandu, building contractor Nepal, residential construction, commercial construction">
 
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+    <meta name="author" content="Sarathi Construction Pvt. Ltd.">
 
-    \:root {
-        \--primary: #ff6b35;
-        \--primary-dark: #e55a2b;
-        \--secondary: #1a1a1a;
-        \--accent: #ffd23f;
-        \--text: #2d3436;
-        \--text-light: #636e72;
-        \--white: #ffffff;
-        \--gray-100: #f8f9fa;
-        \--gray-200: #e9ecef;
-        \--gray-800: #2d3436;
-        \--gradient: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
-        \--shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        \--shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
-    }
+    <title>Sarathi Construction Pvt. Ltd. | Building With Purpose</title>
 
-    body {
-        font-family: 'Work Sans', sans-serif;
-        line-height: 1.7;
-        color: var(--text);
-        overflow-x: hidden;
-    }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    /\* Smooth Scroll \*/
-    html {
-        scroll-behavior: smooth;
-    }
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    /\* Typography \*/
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Bebas Neue', cursive;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.2;
-    }
-
-    /\* Top Bar \*/
-    .topbar {
-        background: var(--secondary);
-        color: white;
-        padding: 0.75rem 0;
-        font-size: 0.875rem;
-    }
-
-    .topbar-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .topbar-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .topbar-item i {
-        color: var(--primary);
-    }
-
-    /\* Navbar \*/
-    .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s;
-    }
-
-    .navbar.scrolled {
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
-    }
-
-    .nav-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 85px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        text-decoration: none;
-        color: var(--secondary);
-    }
-
-    .logo i {
-        font-size: 2.5rem;
-        color: var(--primary);
-    }
-
-    .logo-text {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
-
-    .nav-menu {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-        align-items: center;
-    }
-
-    .nav-menu a {
-        color: var(--text);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.95rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: color 0.3s;
-        position: relative;
-    }
-
-    .nav-menu a::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        background: var(--primary);
-        transition: width 0.3s;
-    }
-
-    .nav-menu a\:hover::after,
-    .nav-menu a.active::after {
-        width: 100%;
-    }
-
-    .nav-menu a\:hover,
-    .nav-menu a.active {
-        color: var(--primary);
-    }
-
-    .mobile-toggle {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0.5rem;
-    }
-
-    .mobile-toggle span {
-        width: 28px;
-        height: 3px;
-        background: var(--secondary);
-        transition: all 0.3s;
-        border-radius: 3px;
-    }
-
-    .mobile-toggle.active span\:nth-child(1) {
-        transform: rotate(45deg) translate(8px, 8px);
-    }
-
-    .mobile-toggle.active span\:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-toggle.active span\:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
-
-    /\* Hero Section \*/
-    .hero {
-        position: relative;
-        height: 90vh;
-        min-height: 600px;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .hero-slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .hero-slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 1.5s ease-in-out;
-    }
-
-    .hero-slide.active {
-        opacity: 1;
-    }
-
-    .hero-slide::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(255, 107, 53, 0.6) 100%);
-        z-index: 1;
-    }
-
-    .hero-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        color: white;
-    }
-
-    .hero-label {
-        display: inline-block;
-        background: var(--primary);
-        color: white;
-        padding: 0.5rem 1.5rem;
-        font-size: 0.875rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 1.5rem;
-        clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0 100%);
-    }
-
-    .hero h1 {
-        font-size: clamp(2.5rem, 8vw, 5rem);
-        margin-bottom: 1.5rem;
-        line-height: 1.1;
-        max-width: 800px;
-    }
-
-    .hero p {
-        font-size: clamp(1.125rem, 2vw, 1.375rem);
-        margin-bottom: 2.5rem;
-        max-width: 600px;
-        font-weight: 300;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.75rem;
-        padding: 1.125rem 2.5rem;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.95rem;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-        border: none;
-        cursor: pointer;
-    }
-
-    .btn-primary {
-        background: var(--primary);
-        color: white;
-        clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 0 100%);
-    }
-
-    .btn-primary\:hover {
-        background: var(--primary-dark);
-        transform: translateX(5px);
-    }
-
-    .btn-secondary {
-        background: transparent;
-        color: white;
-        border: 2px solid white;
-        clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .btn-secondary\:hover {
-        background: white;
-        color: var(--primary);
-        transform: translateX(-5px);
-    }
-
-    /\* Section Styles \*/
-    section {
-        padding: 6rem 2rem;
-    }
-
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .section-header {
-        margin-bottom: 4rem;
-    }
-
-    .section-label {
-        color: var(--primary);
-        font-weight: 700;
-        font-size: 0.875rem;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-bottom: 1rem;
-        display: block;
-    }
-
-    .section-title {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        color: var(--secondary);
-        margin-bottom: 1rem;
-    }
-
-    .section-title span {
-        color: var(--primary);
-    }
-
-    .section-description {
-        font-size: 1.125rem;
-        color: var(--text-light);
-        max-width: 700px;
-    }
-
-    /\* About Section \*/
-    .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: center;
-    }
-
-    .about-image-wrapper {
-        position: relative;
-        height: 600px;
-    }
-
-    .about-image-wrapper::before {
-        content: '';
-        position: absolute;
-        top: -30px;
-        right: -30px;
-        width: 100%;
-        height: 100%;
-        background: var(--gradient);
-        z-index: -1;
-        clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
-    }
-
-    .about-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
-    }
-
-    .about-content h3 {
-        font-size: 1.75rem;
-        margin-bottom: 1.5rem;
-        color: var(--secondary);
-    }
-
-    .about-content p {
-        margin-bottom: 1.5rem;
-        line-height: 1.8;
-    }
-
-    .about-features {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin: 2rem 0;
-    }
-
-    .feature-item {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        font-weight: 600;
-        color: var(--text);
-    }
-
-    .feature-item i {
-        color: var(--primary);
-        font-size: 1.25rem;
-    }
-
-    .chairman-info {
-        margin-top: 2rem;
-        padding: 1.5rem;
-        background: var(--gray-100);
-        border-left: 4px solid var(--primary);
-    }
-
-    .chairman-info strong {
-        color: var(--secondary);
-        font-size: 1.125rem;
-    }
-
-    /\* Services Section \*/
-    .services {
-        background: var(--gray-100);
-    }
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2.5rem;
-    }
-
-    .service-card {
-        background: white;
-        overflow: hidden;
-        transition: all 0.4s;
-        position: relative;
-        box-shadow: var(--shadow);
-    }
-
-    .service-card\:hover {
-        transform: translateY(-10px);
-        box-shadow: var(--shadow-lg);
-    }
-
-    .service-image {
-        width: 100%;
-        height: 280px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .service-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.6s;
-    }
-
-    .service-card\:hover .service-image img {
-        transform: scale(1.1);
-    }
-
-    .service-icon {
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70px;
-        height: 70px;
-        background: var(--primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        color: white;
-        z-index: 2;
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        transition: transform 0.4s;
-    }
-
-    .service-card\:hover .service-icon {
-        transform: translateX(-50%) rotate(45deg);
-    }
-
-    .service-content {
-        padding: 3rem 2rem 2rem;
-        text-align: center;
-    }
-
-    .service-content h4 {
-        font-size: 1.5rem;
-        color: var(--secondary);
-        margin-bottom: 1rem;
-    }
-
-    .service-content p {
-        color: var(--text-light);
-        line-height: 1.8;
-    }
-
-    /\* Portfolio Section \*/
-    .portfolio-filter {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 3rem;
-        flex-wrap: wrap;
-    }
-
-    .filter-btn {
-        padding: 0.75rem 2rem;
-        background: white;
-        border: 2px solid var(--gray-200);
-        color: var(--text);
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-
-    .filter-btn\:hover,
-    .filter-btn.active {
-        background: var(--primary);
-        color: white;
-        border-color: var(--primary);
-        transform: translateY(-3px);
-    }
-
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-    }
-
-    .portfolio-item {
-        position: relative;
-        overflow: hidden;
-        height: 400px;
-        cursor: pointer;
-        transition: all 0.4s;
-    }
-
-    .portfolio-item\:hover {
-        transform: translateY(-5px);
-    }
-
-    .portfolio-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.6s;
-    }
-
-    .portfolio-item\:hover .portfolio-image {
-        transform: scale(1.15);
-    }
-
-    .portfolio-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(26, 26, 26, 0.95) 0%, transparent 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 2rem;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.4s;
-    }
-
-    .portfolio-item\:hover .portfolio-overlay {
-        opacity: 1;
-    }
-
-    .portfolio-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .portfolio-location {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: var(--primary);
-        font-weight: 600;
-    }
-
-    /\* Contact Section \*/
-    .contact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 4rem;
-    }
-
-    .contact-info h3 {
-        font-size: 2.5rem;
-        color: var(--secondary);
-        margin-bottom: 1.5rem;
-    }
-
-    .contact-info p {
-        color: var(--text-light);
-        margin-bottom: 2rem;
-        line-height: 1.8;
-    }
-
-    .contact-details {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 1.25rem;
-    }
-
-    .contact-icon {
-        width: 60px;
-        height: 60px;
-        background: var(--gradient);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        flex-shrink: 0;
-    }
-
-    .contact-text h4 {
-        font-size: 0.875rem;
-        color: var(--text-light);
-        margin-bottom: 0.25rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .contact-text p {
-        color: var(--secondary);
-        font-weight: 600;
-        margin: 0;
-    }
-
-    .contact-form {
-        background: var(--gray-100);
-        padding: 3rem;
-    }
-
-    .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .form-group {
-        margin-bottom: 1.5rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 1.125rem;
-        border: 2px solid var(--gray-200);
-        background: white;
-        font-family: inherit;
-        font-size: 1rem;
-        transition: all 0.3s;
-    }
-
-    .form-group input\:focus,
-    .form-group textarea\:focus {
-        outline: none;
-        border-color: var(--primary);
-    }
-
-    .form-group textarea {
-        resize: vertical;
-        min-height: 150px;
-    }
-
-    /\* Footer \*/
-    footer {
-        background: var(--secondary);
-        color: white;
-        padding: 4rem 2rem 2rem;
-    }
-
-    .footer-content {
-        max-width: 1400px;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-    }
-
-    .footer-logo {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        margin-bottom: 1rem;
-        color: white;
-    }
-
-    .footer-logo i {
-        color: var(--primary);
-    }
-
-    .footer-content p {
-        margin-bottom: 1rem;
-        color: rgba(255, 255, 255, 0.8);
-        line-height: 1.8;
-    }
-
-    .social-links {
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
-
-    .social-links a {
-        width: 45px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--primary);
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s;
-    }
-
-    .social-links a\:hover {
-        background: white;
-        color: var(--primary);
-        transform: translateY(-5px);
-    }
-
-    .footer-bottom {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 2rem;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    /\* Scroll to Top \*/
-    .scroll-top {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        width: 55px;
-        height: 55px;
-        background: var(--primary);
-        color: white;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s;
-        z-index: 999;
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    }
-
-    .scroll-top.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .scroll-top\:hover {
-        background: var(--primary-dark);
-        transform: translateY(-5px);
-    }
-
-    /\* Responsive \*/
-    @media (max-width: 1024px) {
-        .about-grid,
-        .contact-grid {
-            grid-template-columns: 1fr;
-            gap: 3rem;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .about-image-wrapper {
-            height: 450px;
-        }
-    }
+        :root {
+            --primary: #ff6b35;
+            --primary-dark: #e55a2b;
+            --secondary: #1a1a1a;
+            --accent: #ffd23f;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --white: #ffffff;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-800: #2d3436;
 
-    @media (max-width: 768px) {
+            --gradient: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.10);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            overflow-x: hidden;
+            background: #fff;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .topbar {
+            background: var(--secondary);
+            color: white;
+            padding: 0.75rem 0;
+            font-size: 0.875rem;
+        }
+
         .topbar-container {
-            justify-content: center;
-            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .topbar-item {
-            font-size: 0.8rem;
-        }
-
-        .mobile-toggle {
             display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .nav-menu {
-            position: fixed;
-            left: -100%;
-            top: 85px;
-            flex-direction: column;
-            background: white;
-            width: 100%;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: left 0.3s;
-            gap: 1.5rem;
-            align-items: flex-start;
+        .topbar-item i {
+            color: var(--primary);
         }
 
-        .nav-menu.active {
-            left: 0;
+        .topbar-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .topbar-item a:hover {
+            color: var(--primary);
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--secondary);
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary);
         }
 
         .logo-text {
-            font-size: 1.5rem;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
         }
+
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            width: 28px;
+            height: 3px;
+            background: var(--secondary);
+            transition: all 0.3s;
+            border-radius: 3px;
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
-            height: 70vh;
-            min-height: 500px;
+            position: relative;
+            height: 88vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
         }
 
-        section {
-            padding: 4rem 1.5rem;
-        }
-
-        .services-grid,
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .form-row {
-            grid-template-columns: 1fr;
-        }
-
-        .about-features {
-            grid-template-columns: 1fr;
-        }
-
-        .contact-form {
-            padding: 2rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .hero-buttons {
-            flex-direction: column;
+        .hero-slider {
+            position: absolute;
+            inset: 0;
             width: 100%;
+            height: 100%;
+        }
+
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(26, 26, 26, 0.88) 0%,
+                    rgba(26, 26, 26, 0.62) 48%,
+                    rgba(255, 107, 53, 0.50) 100%
+                );
+            z-index: 1;
+        }
+
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 2rem;
+            color: white;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 15px) 0,
+                100% 100%,
+                0 100%
+            );
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.05;
+            max-width: 850px;
+        }
+
+        .hero p {
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .btn {
-            width: 100%;
+            display: inline-flex;
+            align-items: center;
             justify-content: center;
+            gap: 0.75rem;
+            padding: 1.1rem 2.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
         }
 
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 20px) 0,
+                100% 100%,
+                0 100%
+            );
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateX(5px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            clip-path: polygon(
+                20px 0,
+                100% 0,
+                100% 100%,
+                0 100%
+            );
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        /* =========================
+           QUICK FACTS
+        ========================= */
+
+        .quick-facts {
+            position: relative;
+            z-index: 5;
+            margin-top: -65px;
+            padding: 0 2rem;
+        }
+
+        .quick-facts-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: var(--shadow-lg);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .fact {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-right: 1px solid var(--gray-200);
+        }
+
+        .fact:last-child {
+            border-right: none;
+        }
+
+        .fact-icon {
+            width: 55px;
+            height: 55px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--secondary);
+        }
+
+        .fact span {
+            display: block;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           SECTION STYLES
+        ========================= */
+
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(2.3rem, 5vw, 3.6rem);
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title span {
+            color: var(--primary);
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            height: 600px;
+        }
+
+        .about-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient);
+            z-index: -1;
+            clip-path: polygon(
+                30px 0,
+                100% 0,
+                100% calc(100% - 30px),
+                calc(100% - 30px) 100%,
+                0 100%,
+                0 30px
+            );
+        }
+
+        .about-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(
+                30px 0,
+                100% 0,
+                100% calc(100% - 30px),
+                calc(100% - 30px) 100%,
+                0 100%,
+                0 30px
+            );
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.25rem;
+            color: var(--secondary);
+        }
+
+        .about-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.85;
+            color: var(--text);
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .feature-item i {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+
+        .chairman-info {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--gray-100);
+            border-left: 4px solid var(--primary);
+        }
+
+        .chairman-info strong {
+            color: var(--secondary);
+            font-size: 1.125rem;
+        }
+
+        .chairman-info span {
+            color: var(--text-light);
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: var(--gray-100);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: white;
+            overflow: hidden;
+            transition: all 0.4s;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.08);
+        }
+
+        .service-icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            z-index: 2;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .service-content {
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .service-content h4 {
+            font-size: 1.55rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .service-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
         .portfolio-filter {
-            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
         }
 
         .filter-btn {
+            padding: 0.75rem 2rem;
+            background: white;
+            border: 2px solid var(--gray-200);
+            color: var(--text);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-image {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
         }
-    }
-\</style>
 
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.08);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(26, 26, 26, 0.95) 0%,
+                rgba(26, 26, 26, 0.2) 70%,
+                transparent 100%
+            );
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info > p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-text p,
+        .contact-text a {
+            color: var(--secondary);
+            font-weight: 600;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .contact-text a:hover {
+            color: var(--primary);
+        }
+
+        .contact-form {
+            background: var(--gray-100);
+            padding: 3rem;
+        }
+
+        .contact-form-header {
+            margin-bottom: 2rem;
+        }
+
+        .contact-form-header h3 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-header p {
+            color: var(--text-light);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.05rem;
+            border: 2px solid var(--gray-200);
+            background: white;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s;
+            color: var(--text);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-logo i {
+            color: var(--primary);
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.8;
+            max-width: 500px;
+        }
+
+        .footer-heading {
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.8rem;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .footer-contact i {
+            color: var(--primary);
+            width: 22px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           SCROLL TOP
+        ========================= */
+
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 55px;
+            height: 55px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+            z-index: 999;
+            clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+            );
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1100px) {
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .topbar-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .topbar-item {
+                font-size: 0.8rem;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 85px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s;
+                gap: 1.5rem;
+                align-items: flex-start;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .logo i {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 72vh;
+                min-height: 520px;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.8rem, 12vw, 4.5rem);
+            }
+
+            section {
+                padding: 4.5rem 1.5rem;
+            }
+
+            .quick-facts {
+                margin-top: 0;
+                padding: 0 1.5rem;
+            }
+
+            .quick-facts-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .fact {
+                border-right: none;
+                border-bottom: 1px solid var(--gray-200);
+            }
+
+            .fact:last-child {
+                border-bottom: none;
+            }
+
+            .about-image-wrapper {
+                height: 450px;
+            }
+
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topbar-container {
+                padding: 0 1rem;
+            }
+
+            .topbar {
+                padding: 0.65rem 0;
+            }
+
+            .topbar-item {
+                font-size: 0.75rem;
+            }
+
+            .nav-container {
+                padding: 0 1.25rem;
+            }
+
+            .hero-content {
+                padding: 0 1.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .portfolio-filter {
+                flex-direction: column;
+            }
+
+            .filter-btn {
+                width: 100%;
+            }
+
+            .scroll-top {
+                right: 1rem;
+                bottom: 1rem;
+            }
+        }
+
+        /* =========================
+           ACCESSIBILITY
+        ========================= */
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<!-- Top Bar -->
-<div class="topbar">
-<div class="topbar-container">
-<div class="topbar-item">
-<i class="fas fa-map-marker-alt"></i>
-<span>Tokha-7, Kathmandu, Nepal</span>
-</div>
-<div class="topbar-item">
-<i class="fas fa-envelope"></i>
-<span>sarathiyb@gmail.com</span>
-</div>
-<div class="topbar-item">
-<i class="fas fa-phone"></i>
-<span>+977 9851055392</span>
-</div>
-</div>
-</div>
 
-\<!-- Navbar -->
-\<nav class="navbar">
-    \<div class="nav-container">
-        \<a href="#" class="logo">
-            \<i class="fas fa-building">\</i>
-            \<span class="logo-text">SARATHI CONSTRUCTION\</span>
-        \</a>
-        \<button class="mobile-toggle" id="mobileToggle">
-            \<span>\</span>
-            \<span>\</span>
-            \<span>\</span>
-        \</button>
-        \<ul class="nav-menu" id="navMenu">
-            \<li>\<a href="#home" class="active">Home\</a>\</li>
-            \<li>\<a href="#about">About\</a>\</li>
-            \<li>\<a href="#services">Services\</a>\</li>
-            \<li>\<a href="#portfolio">Projects\</a>\</li>
-            \<li>\<a href="#contact">Contact\</a>\</li>
-        \</ul>
-    \</div>
-\</nav>
+    <!-- =========================
+         TOP BAR
+    ========================== -->
 
-\<!-- Hero Section -->
-\<section id="home" class="hero">
-    \<div class="hero-slider">
-        \<div class="hero-slide active">
-            \<img src="img/carousel-1.jpg" alt="Construction Site">
-        \</div>
-        \<div class="hero-slide">
-            \<img src="img/carousel-2.jpg" alt="Building Project">
-        \</div>
-    \</div>
-    \<div class="hero-content">
-        \<span class="hero-label">Building Excellence\</span>
-        \<h1>Build Your Dream Project With Us\</h1>
-        \<p>Your trusted partner in the construction industry. We deliver exceptional building projects and manage a wide range of infrastructure needs with precision and care.\</p>
-        \<div class="hero-buttons">
-            \<a href="#contact" class="btn btn-primary">
-                Get A Quote
-                \<i class="fas fa-arrow-right">\</i>
-            \</a>
-            \<a href="#about" class="btn btn-secondary">
-                Learn More
-                \<i class="fas fa-info-circle">\</i>
-            \</a>
-        \</div>
-    \</div>
-\</section>
+    <div class="topbar">
+        <div class="topbar-container">
 
-\<!-- About Section -->
-\<section id="about">
-    \<div class="container">
-        \<div class="about-grid">
-            \<div class="about-image-wrapper">
-                \<img src="img/about.jpg" alt="About Sarathi Construction" class="about-image">
-            \</div>
-            \<div class="about-content">
-                \<div class="section-header">
-                    \<span class="section-label">About Us\</span>
-                    \<h2 class="section-title">We Are Your \<span>Trusted Partner\</span> in Construction\</h2>
-                \</div>
-                \<h3>Sarathi Construction Pvt. Ltd.\</h3>
-                \<p>A trusted name in the industry, known for delivering exceptional building projects and managing a wide range of infrastructure needs. We manage every aspect of your project from start to finish, ensuring top-notch quality and meticulous attention to detail.\</p>
-                \<p>Our expertise lies in creating durable, innovative, and efficient structures that stand the test of time. Whether it's residential, commercial, or custom projects, we are your reliable partner for turning ideas into reality.\</p>
-               &#x20;
-                \<div class="about-features">
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>Perfect Planning\</span>
-                    \</div>
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>Skilled Professionals\</span>
-                    \</div>
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>Innovative Designs\</span>
-                    \</div>
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>On-Time Delivery\</span>
-                    \</div>
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>Quality Craftsmanship\</span>
-                    \</div>
-                    \<div class="feature-item">
-                        \<i class="fas fa-check-circle">\</i>
-                        \<span>Client-Centered Approach\</span>
-                    \</div>
-                \</div>
+            <div class="topbar-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Tokha-7, Kathmandu, Nepal</span>
+            </div>
 
-                \<div class="chairman-info">
-                    \<strong>Mr. Yagya Prasad Neupane\</strong>\<br>
-                    Chairman, Sarathi Construction Pvt. Ltd.
-                \</div>
-            \</div>
-        \</div>
-    \</div>
-\</section>
+            <div class="topbar-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:sarathiyb@gmail.com">
+                    sarathiyb@gmail.com
+                </a>
+            </div>
 
-\<!-- Services Section -->
-\<section id="services" class="services">
-    \<div class="container">
-        \<div class="section-header" style="text-align: center;">
-            \<span class="section-label">Our Services\</span>
-            \<h2 class="section-title">We Provide \<span>The Best\</span> Construction Services\</h2>
-        \</div>
-        \<div class="services-grid">
-            \<div class="service-card">
-                \<div class="service-image">
-                    \<img src="img/service-1.jpg" alt="Construction Management">
-                    \<div class="service-icon">
-                        \<i class="fas fa-building">\</i>
-                    \</div>
-                \</div>
-                \<div class="service-content">
-                    \<h4>Construction Management\</h4>
-                    \<p>We oversee every aspect of your construction project, ensuring it stays within budget and timeline. From managing contractors to quality control, we ensure efficient and high-quality project execution, meeting all safety and regulatory standards.\</p>
-                \</div>
-            \</div>
+            <div class="topbar-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+9779851055392">
+                    +977 9851055392
+                </a>
+            </div>
 
-            \<div class="service-card">
-                \<div class="service-image">
-                    \<img src="img/service-5.jpg" alt="Planning & Consulting">
-                    \<div class="service-icon">
-                        \<i class="fas fa-tools">\</i>
-                    \</div>
-                \</div>
-                \<div class="service-content">
-                    \<h4>Planning & Consulting\</h4>
-                    \<p>We provide expert planning and consulting to ensure your project runs smoothly. From feasibility studies to cost estimation and resource management, we create a structured roadmap, minimizing risks and optimizing resources for on-time and on-budget delivery.\</p>
-                \</div>
-            \</div>
+        </div>
+    </div>
 
-            \<div class="service-card">
-                \<div class="service-image">
-                    \<img src="img/service-3.jpg" alt="Architecture Design">
-                    \<div class="service-icon">
-                        \<i class="fas fa-drafting-compass">\</i>
-                    \</div>
-                \</div>
-                \<div class="service-content">
-                    \<h4>Architecture Design\</h4>
-                    \<p>We create visually striking and functional exteriors that enhance the look and feel of your building. From material selection to design, we ensure your building stands out while being sustainable, durable, and energy-efficient.\</p>
-                \</div>
-            \</div>
-        \</div>
-    \</div>
-\</section>
 
-\<!-- Portfolio Section -->
-\<section id="portfolio">
-    \<div class="container">
-        \<div class="section-header" style="text-align: center;">
-            \<span class="section-label">Our Projects\</span>
-            \<h2 class="section-title">Some Of Our \<span>Popular\</span> Dream Projects\</h2>
-        \</div>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-        \<div class="portfolio-filter">
-            \<button class="filter-btn active" data-filter="all">All Projects\</button>
-            \<button class="filter-btn" data-filter="commercial">Commercial\</button>
-            \<button class="filter-btn" data-filter="residential">Residential\</button>
-        \</div>
+    <nav class="navbar">
 
-        \<div class="portfolio-grid">
-            \<div class="portfolio-item" data-category="commercial">
-                \<img src="img/portfolio-1.jpg" alt="Muktinath Bikas Bank" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Muktinath Bikas Bank\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Lazimpat, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+        <div class="nav-container">
 
-            \<div class="portfolio-item" data-category="residential">
-                \<img src="img/portfolio-2.jpg" alt="Residential Property" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Residential Property\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Sanepa, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+            <a href="#home" class="logo">
+                <i class="fas fa-building"></i>
+                <span class="logo-text">SARATHI CONSTRUCTION</span>
+            </a>
 
-            \<div class="portfolio-item" data-category="commercial">
-                \<img src="img/portfolio-3.jpg" alt="Omoda Jaecoo Nepal" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Omoda Jaecoo Nepal\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Uttardhoka, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+            <button
+                class="mobile-toggle"
+                id="mobileToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            \<div class="portfolio-item" data-category="residential">
-                \<img src="img/portfolio-4.jpg" alt="Residential Property" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Residential Property\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Tokha-7, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+            <ul class="nav-menu" id="navMenu">
 
-            \<div class="portfolio-item" data-category="commercial">
-                \<img src="img/portfolio-5.jpg" alt="Office of Auditor General" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Office of Auditor General\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Anamnagar, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
 
-            \<div class="portfolio-item" data-category="residential">
-                \<img src="img/portfolio-6.jpg" alt="Residential Property" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Residential Property\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Tokha-7, Kathmandu\</span>
-                    \</div>
-                \</div>
-            \</div>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-            \<div class="portfolio-item" data-category="commercial">
-                \<img src="img/portfolio-7.jpg" alt="Chandragiri Municipality" class="portfolio-image">
-                \<div class="portfolio-overlay">
-                    \<h3 class="portfolio-title">Chandragiri Municipality\</h3>
-                    \<div class="portfolio-location">
-                        \<i class="fas fa-map-marker-alt">\</i>
-                        \<span>Balambu, Chandragiri\</span>
-                    \</div>
-                \</div>
-            \</div>
-        \</div>
-    \</div>
-\</section>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
 
-\<!-- Contact Section -->
-\<section id="contact">
-    \<div class="container">
-        \<div class="contact-grid">
-            \<div class="contact-info">
-                \<div class="section-header">
-                    \<span class="section-label">Get In Touch\</span>
-                    \<h2 class="section-title">Request A \<span>Call Back\</span>\</h2>
-                \</div>
-                \<p>At Sarathi Construction, we're here to assist you with all your building and infrastructure needs. Whether you have questions or want to discuss your project, simply request a call back, and one of our experts will get in touch promptly to provide personalized support and guidance.\</p>
-               &#x20;
-                \<div class="contact-details">
-                    \<div class="contact-item">
-                        \<div class="contact-icon">
-                            \<i class="fas fa-map-marker-alt">\</i>
-                        \</div>
-                        \<div class="contact-text">
-                            \<h4>Our Office\</h4>
-                            \<p>Tokha-7, Kathmandu, Nepal\</p>
-                        \</div>
-                    \</div>
+                <li>
+                    <a href="#portfolio">Projects</a>
+                </li>
 
-                    \<div class="contact-item">
-                        \<div class="contact-icon">
-                            \<i class="fas fa-envelope">\</i>
-                        \</div>
-                        \<div class="contact-text">
-                            \<h4>Email Us\</h4>
-                            \<p>sarathiyb\@gmail.com\</p>
-                        \</div>
-                    \</div>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-                    \<div class="contact-item">
-                        \<div class="contact-icon">
-                            \<i class="fas fa-phone">\</i>
-                        \</div>
-                        \<div class="contact-text">
-                            \<h4>Call Us\</h4>
-                            \<p>+977 9851055392\</p>
-                        \</div>
-                    \</div>
-                \</div>
-            \</div>
+            </ul>
 
-            \<div class="contact-form">
-                \<form id="contactForm">
-                    \<div class="form-row">
-                        \<div class="form-group">
-                            \<input type="text" placeholder="Your Name \*" required>
-                        \</div>
-                        \<div class="form-group">
-                            \<input type="email" placeholder="Your Email \*" required>
-                        \</div>
-                    \</div>
-                    \<div class="form-row">
-                        \<div class="form-group">
-                            \<input type="text" placeholder="Call Back Date">
-                        \</div>
-                        \<div class="form-group">
-                            \<input type="text" placeholder="Call Back Time">
-                        \</div>
-                    \</div>
-                    \<div class="form-group">
-                        \<textarea placeholder="Your Message \*" required>\</textarea>
-                    \</div>
-                    \<button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                        Submit Request
-                        \<i class="fas fa-paper-plane">\</i>
-                    \</button>
-                \</form>
-            \</div>
-        \</div>
-    \</div>
-\</section>
+        </div>
 
-\<!-- Footer -->
-\<footer>
-    \<div class="footer-content">
-        \<h2 class="footer-logo">
-            \<i class="fas fa-building">\</i>
-            SARATHI CONSTRUCTION
-        \</h2>
-        \<p>We don't just construct buildings; we create spaces that inspire, innovate, and stand the test of time. From concept to completion, our expert team is dedicated to transforming your ideas into reality with unparalleled quality and craftsmanship.\</p>
-        \<p>\<i class="fas fa-map-marker-alt">\</i> Tokha-7, Kathmandu, Nepal\</p>
-        \<p>\<i class="fas fa-phone">\</i> +977 9851055392\</p>
-        \<p>\<i class="fas fa-envelope">\</i> sarathiyb\@gmail.com\</p>
-       &#x20;
-        \<div class="social-links">
-            \<a href="#">\<i class="fab fa-facebook-f">\</i>\</a>
-            \<a href="#">\<i class="fab fa-twitter">\</i>\</a>
-            \<a href="#">\<i class="fab fa-linkedin-in">\</i>\</a>
-            \<a href="#">\<i class="fab fa-instagram">\</i>\</a>
-        \</div>
-    \</div>
-   &#x20;
-    \<div class="footer-bottom">
-        \<p>&copy; 2025 Sarathi Construction Pvt. Ltd. All Rights Reserved.\</p>
-    \</div>
-\</footer>
+    </nav>
 
-\<!-- Scroll to Top -->
-\<button class="scroll-top" id="scrollTop">
-    \<i class="fas fa-arrow-up">\</i>
-\</button>
 
-\<script>
-    // Mobile Menu Toggle
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
+    <!-- =========================
+         HERO
+    ========================== -->
 
-    mobileToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileToggle.classList.toggle('active');
-    });
+    <section id="home" class="hero">
 
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileToggle.classList.remove('active');
+        <div class="hero-slider">
+
+            <div class="hero-slide active">
+                <img
+                    src="img/carousel-1.jpg"
+                    alt="Sarathi Construction project"
+                >
+            </div>
+
+            <div class="hero-slide">
+                <img
+                    src="img/carousel-2.jpg"
+                    alt="Sarathi Construction building project"
+                >
+            </div>
+
+        </div>
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                Established 2018
+            </span>
+
+            <h1>
+                Building With Purpose. Delivering With Care.
+            </h1>
+
+            <p>
+                Sarathi Construction has been working on residential,
+                commercial and infrastructure projects since 2018,
+                bringing together practical planning, skilled workmanship
+                and close attention to every stage of construction.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Discuss Your Project
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#portfolio" class="btn btn-secondary">
+                    View Our Projects
+                    <i class="fas fa-building"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUICK FACTS
+    ========================== -->
+
+    <div class="quick-facts">
+
+        <div class="quick-facts-inner">
+
+            <div class="fact">
+
+                <div class="fact-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <strong>Since 2018</strong>
+                    <span>Serving clients for years</span>
+                </div>
+
+            </div>
+
+
+            <div class="fact">
+
+                <div class="fact-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+
+                <div>
+                    <strong>15+ Projects</strong>
+                    <span>Residential & commercial work</span>
+                </div>
+
+            </div>
+
+
+            <div class="fact">
+
+                <div class="fact-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+
+                <div>
+                    <strong>One Project at a Time</strong>
+                    <span>Focused on quality and delivery</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-image-wrapper">
+
+                    <img
+                        src="img/about.jpg"
+                        alt="Sarathi Construction team and project"
+                        class="about-image"
+                    >
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="section-header">
+
+                        <span class="section-label">
+                            About Sarathi
+                        </span>
+
+                        <h2 class="section-title">
+                            A Construction Company Built On
+                            <span>Experience</span>
+                        </h2>
+
+                    </div>
+
+
+                    <h3>
+                        Sarathi Construction Pvt. Ltd.
+                    </h3>
+
+
+                    <p>
+                        Established in 2018, Sarathi Construction Pvt. Ltd.
+                        is a Kathmandu-based construction company working
+                        across residential, commercial and infrastructure
+                        projects.
+                    </p>
+
+                    <p>
+                        Over the years, we have completed more than 15
+                        projects, each bringing its own requirements,
+                        challenges and working environment. That experience
+                        has taught us the importance of planning properly,
+                        coordinating closely and paying attention to the
+                        details that matter on site.
+                    </p>
+
+                    <p>
+                        We work with clients from the early planning stage
+                        through construction and completion, keeping
+                        communication practical and straightforward along
+                        the way.
+                    </p>
+
+
+                    <div class="about-features">
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Practical Planning</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Experienced Team</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Workmanship</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clear Coordination</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Attention to Detail</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Responsible Delivery</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chairman-info">
+
+                        <strong>
+                            Mr. Yagya Prasad Neupane
+                        </strong>
+
+                        <br>
+
+                        <span>
+                            Chairman, Sarathi Construction Pvt. Ltd.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section id="services" class="services">
+
+        <div class="container">
+
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
+
+                <span class="section-label">
+                    What We Do
+                </span>
+
+                <h2 class="section-title">
+                    Construction Services That
+                    <span>Make Sense</span>
+                </h2>
+
+                <p
+                    class="section-description"
+                    style="margin: 0 auto;"
+                >
+                    From planning and design to construction management,
+                    we focus on practical solutions that suit the project,
+                    the site and the client's requirements.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="img/service-1.jpg"
+                            alt="Construction management services"
+                        >
+
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Construction Management
+                        </h4>
+
+                        <p>
+                            We coordinate the different stages of
+                            construction, from site activities and
+                            contractors to quality checks and project
+                            progress. The goal is simple: keep the work
+                            organized and moving in the right direction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="img/service-5.jpg"
+                            alt="Construction planning and consulting"
+                        >
+
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Planning & Consulting
+                        </h4>
+
+                        <p>
+                            Good construction starts with a good plan.
+                            We help with project planning, feasibility,
+                            cost considerations and resource coordination
+                            before work begins on site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="img/service-3.jpg"
+                            alt="Architecture and building design"
+                        >
+
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <h4>
+                            Architecture & Design
+                        </h4>
+
+                        <p>
+                            We work toward designs that balance appearance,
+                            functionality and practical construction
+                            requirements, helping clients make better
+                            decisions before the work begins.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="portfolio">
+
+        <div class="container">
+
+            <div
+                class="section-header"
+                style="text-align: center;"
+            >
+
+                <span class="section-label">
+                    Selected Work
+                </span>
+
+                <h2 class="section-title">
+                    Projects We've
+                    <span>Worked On</span>
+                </h2>
+
+                <p
+                    class="section-description"
+                    style="margin: 0 auto;"
+                >
+                    A selection of residential, commercial and
+                    institutional projects completed by our team.
+                </p>
+
+            </div>
+
+
+            <div class="portfolio-filter">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All Projects
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="commercial"
+                >
+                    Commercial
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="residential"
+                >
+                    Residential
+                </button>
+
+            </div>
+
+
+            <div class="portfolio-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-1.jpg"
+                        alt="Muktinath Bikas Bank project in Lazimpat"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Muktinath Bikas Bank
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lazimpat, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-2.jpg"
+                        alt="Residential construction project in Sanepa"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sanepa, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-3.jpg"
+                        alt="Omoda Jaecoo Nepal project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Omoda Jaecoo Nepal
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Uttardhoka, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-4.jpg"
+                        alt="Residential construction project in Tokha"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tokha-7, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-5.jpg"
+                        alt="Office of Auditor General project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Office of Auditor General
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Anamnagar, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 6 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="residential"
+                >
+
+                    <img
+                        src="img/portfolio-6.jpg"
+                        alt="Residential construction project in Tokha"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Residential Property
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tokha-7, Kathmandu</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 7 -->
+
+                <div
+                    class="portfolio-item"
+                    data-category="commercial"
+                >
+
+                    <img
+                        src="img/portfolio-7.jpg"
+                        alt="Chandragiri Municipality project"
+                        class="portfolio-image"
+                    >
+
+                    <div class="portfolio-overlay">
+
+                        <h3 class="portfolio-title">
+                            Chandragiri Municipality
+                        </h3>
+
+                        <div class="portfolio-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Balambu, Chandragiri</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info">
+
+                    <div class="section-header">
+
+                        <span class="section-label">
+                            Start A Conversation
+                        </span>
+
+                        <h2 class="section-title">
+                            Have A Project In
+                            <span>Mind?</span>
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Whether you are planning a new building,
+                        renovating an existing space or simply want
+                        to understand what your project may involve,
+                        get in touch with us. We are happy to discuss
+                        the requirements and understand what you need.
+                    </p>
+
+
+                    <div class="contact-details">
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Our Office
+                                </h4>
+
+                                <p>
+                                    Tokha-7, Kathmandu, Nepal
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Email
+                                </h4>
+
+                                <a href="mailto:sarathiyb@gmail.com">
+                                    sarathiyb@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="contact-text">
+
+                                <h4>
+                                    Phone
+                                </h4>
+
+                                <a href="tel:+9779851055392">
+                                    +977 9851055392
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form">
+
+                    <div class="contact-form-header">
+
+                        <h3>
+                            Tell Us About Your Project
+                        </h3>
+
+                        <p>
+                            Leave your details and we'll get back to you.
+                        </p>
+
+                    </div>
+
+
+                    <!--
+                        IMPORTANT:
+                        Replace the form action with your hosting
+                        form-processing endpoint before going live.
+                    -->
+
+                    <form
+                        id="contactForm"
+                        action="mailto:sarathiyb@gmail.com"
+                        method="post"
+                        enctype="text/plain"
+                    >
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="Name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="Email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="Phone"
+                                    placeholder="+977"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="projectType">
+                                    Project Type
+                                </label>
+
+                                <select
+                                    id="projectType"
+                                    name="Project Type"
+                                >
+
+                                    <option value="">
+                                        Select project type
+                                    </option>
+
+                                    <option value="Residential">
+                                        Residential
+                                    </option>
+
+                                    <option value="Commercial">
+                                        Commercial
+                                    </option>
+
+                                    <option value="Renovation">
+                                        Renovation
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell us about your project *
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="Message"
+                                placeholder="Briefly describe your project, location and what you need help with..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                            style="width: 100%;"
+                        >
+                            Send Enquiry
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+
+                        <p class="form-note">
+                            We will use the information you provide only
+                            to respond to your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-about">
+
+                <h2 class="footer-logo">
+
+                    <i class="fas fa-building"></i>
+
+                    SARATHI CONSTRUCTION
+
+                </h2>
+
+                <p>
+                    Established in 2018, Sarathi Construction Pvt. Ltd.
+                    works on residential, commercial and infrastructure
+                    projects with a practical approach to planning,
+                    construction and project coordination.
+                </p>
+
+
+                <div class="social-links">
+
+                    <!-- Replace # with actual social media URLs -->
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="footer-heading">
+                    Quick Links
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3 class="footer-heading">
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Tokha-7, Kathmandu, Nepal
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a
+                        href="tel:+9779851055392"
+                        style="color: inherit; text-decoration: none;"
+                    >
+                        +977 9851055392
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a
+                        href="mailto:sarathiyb@gmail.com"
+                        style="color: inherit; text-decoration: none;"
+                    >
+                        sarathiyb@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Sarathi Construction Pvt. Ltd.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         SCROLL TO TOP
+    ========================== -->
+
+    <button
+        class="scroll-top"
+        id="scrollTop"
+        aria-label="Scroll to top"
+    >
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        /* =========================
+           MOBILE MENU
+        ========================== */
+
+        const mobileToggle =
+            document.getElementById('mobileToggle');
+
+        const navMenu =
+            document.getElementById('navMenu');
+
+
+        mobileToggle.addEventListener('click', () => {
+
+            const isActive =
+                navMenu.classList.toggle('active');
+
+            mobileToggle.classList.toggle('active');
+
+            mobileToggle.setAttribute(
+                'aria-expanded',
+                isActive
+            );
+
         });
-    });
 
-    // Navbar scroll effect
-    const navbar = document.querySelector('.navbar');
-    window\.addEventListener('scroll', () => {
-        if (window\.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
 
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-menu a');
+        document
+            .querySelectorAll('.nav-menu a')
+            .forEach(link => {
 
-    window\.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
+                link.addEventListener('click', () => {
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').slice(1) === current) {
-                link.classList.add('active');
-            }
-        });
-    });
+                    navMenu.classList.remove('active');
 
-    // Hero Slider
-    const slides = document.querySelectorAll('.hero-slide');
-    let currentSlide = 0;
+                    mobileToggle.classList.remove('active');
 
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
+                    mobileToggle.setAttribute(
+                        'aria-expanded',
+                        'false'
+                    );
 
-    setInterval(nextSlide, 5000);
-
-    // Portfolio Filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.getAttribute('data-filter');
-
-            portfolioItems.forEach(item => {
-                if (filter === 'all') {
-                    item.style.display = 'block';
-                } else {
-                    if (item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                }
-            });
-        });
-    });
-
-    // Scroll to top button
-    const scrollTop = document.getElementById('scrollTop');
-   &#x20;
-    window\.addEventListener('scroll', () => {
-        if (window\.scrollY > 300) {
-            scrollTop.classList.add('visible');
-        } else {
-            scrollTop.classList.remove('visible');
-        }
-    });
-
-    scrollTop.addEventListener('click', () => {
-        window\.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    // Contact Form
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Thank you for your request! We will contact you shortly.');
-        this.reset();
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
                 });
+
+            });
+
+
+        /* =========================
+           NAVBAR SCROLL
+        ========================== */
+
+        const navbar =
+            document.querySelector('.navbar');
+
+
+        window.addEventListener('scroll', () => {
+
+            if (window.scrollY > 50) {
+
+                navbar.classList.add('scrolled');
+
+            } else {
+
+                navbar.classList.remove('scrolled');
+
             }
+
         });
-    });
-\</script>
+
+
+        /* =========================
+           ACTIVE NAVIGATION
+        ========================== */
+
+        const sections =
+            document.querySelectorAll('section[id]');
+
+        const navLinks =
+            document.querySelectorAll('.nav-menu a');
+
+
+        function updateActiveNavigation() {
+
+            let current = 'home';
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop - 150;
+
+                if (window.scrollY >= sectionTop) {
+
+                    current =
+                        section.getAttribute('id');
+
+                }
+
+            });
+
+
+            navLinks.forEach(link => {
+
+                link.classList.remove('active');
+
+                if (
+                    link.getAttribute('href') ===
+                    '#' + current
+                ) {
+
+                    link.classList.add('active');
+
+                }
+
+            });
+
+        }
+
+
+        window.addEventListener(
+            'scroll',
+            updateActiveNavigation
+        );
+
+
+        /* =========================
+           HERO SLIDER
+        ========================== */
+
+        const slides =
+            document.querySelectorAll('.hero-slide');
+
+        let currentSlide = 0;
+
+
+        function nextSlide() {
+
+            if (slides.length <= 1) {
+                return;
+            }
+
+            slides[currentSlide]
+                .classList
+                .remove('active');
+
+            currentSlide =
+                (currentSlide + 1) % slides.length;
+
+            slides[currentSlide]
+                .classList
+                .add('active');
+
+        }
+
+
+        setInterval(nextSlide, 5000);
+
+
+        /* =========================
+           PROJECT FILTER
+        ========================== */
+
+        const filterBtns =
+            document.querySelectorAll('.filter-btn');
+
+        const portfolioItems =
+            document.querySelectorAll('.portfolio-item');
+
+
+        filterBtns.forEach(btn => {
+
+            btn.addEventListener('click', () => {
+
+                filterBtns.forEach(button => {
+
+                    button.classList.remove('active');
+
+                });
+
+                btn.classList.add('active');
+
+
+                const filter =
+                    btn.getAttribute('data-filter');
+
+
+                portfolioItems.forEach(item => {
+
+                    const category =
+                        item.getAttribute('data-category');
+
+
+                    if (
+                        filter === 'all' ||
+                        category === filter
+                    ) {
+
+                        item.style.display = '';
+
+                    } else {
+
+                        item.style.display = 'none';
+
+                    }
+
+                });
+
+            });
+
+        });
+
+
+        /* =========================
+           SCROLL TO TOP
+        ========================== */
+
+        const scrollTop =
+            document.getElementById('scrollTop');
+
+
+        window.addEventListener('scroll', () => {
+
+            if (window.scrollY > 300) {
+
+                scrollTop.classList.add('visible');
+
+            } else {
+
+                scrollTop.classList.remove('visible');
+
+            }
+
+        });
+
+
+        scrollTop.addEventListener('click', () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: 'smooth'
+
+            });
+
+        });
+
+
+        /* =========================
+           CONTACT FORM
+        ========================== */
+
+        const contactForm =
+            document.getElementById('contactForm');
+
+
+        contactForm.addEventListener('submit', function () {
+
+            /*
+             * The form currently uses mailto.
+             * For a professional production website,
+             * connect this to a PHP mail handler or
+             * your hosting provider's form-processing system.
+             */
+
+        });
+
+
+        /* =========================
+           ESC KEY
+        ========================== */
+
+        document.addEventListener('keydown', event => {
+
+            if (event.key === 'Escape') {
+
+                navMenu.classList.remove('active');
+
+                mobileToggle.classList.remove('active');
+
+                mobileToggle.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
+```
